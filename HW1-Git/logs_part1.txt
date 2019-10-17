@@ -1,0 +1,46 @@
+89f7379 (HEAD -> HW1-Git, feature4, feature3, develop) HEAD@{0}: rebase finished: returning to refs/heads/HW1-Git
+89f7379 (HEAD -> HW1-Git, feature4, feature3, develop) HEAD@{1}: rebase: checkout develop
+69db18f (feature2, feature1) HEAD@{2}: checkout: moving from feature3 to HW1-Git
+89f7379 (HEAD -> HW1-Git, feature4, feature3, develop) HEAD@{3}: rebase finished: returning to refs/heads/feature3
+89f7379 (HEAD -> HW1-Git, feature4, feature3, develop) HEAD@{4}: rebase: checkout develop
+385940b HEAD@{5}: checkout: moving from develop to feature3
+89f7379 (HEAD -> HW1-Git, feature4, feature3, develop) HEAD@{6}: rebase finished: returning to refs/heads/develop
+89f7379 (HEAD -> HW1-Git, feature4, feature3, develop) HEAD@{7}: rebase: checkout feature4
+385940b HEAD@{8}: checkout: moving from feature4 to develop
+89f7379 (HEAD -> HW1-Git, feature4, feature3, develop) HEAD@{9}: rebase finished: returning to refs/heads/feature4
+89f7379 (HEAD -> HW1-Git, feature4, feature3, develop) HEAD@{10}: rebase: HW1-Git: change images
+cb8a2a8 HEAD@{11}: rebase: HW1-Git: body bg
+385940b HEAD@{12}: rebase: checkout develop
+2b491e8 HEAD@{13}: checkout: moving from feature3 to feature4
+385940b HEAD@{14}: reset: moving to HEAD
+385940b HEAD@{15}: checkout: moving from develop to feature3
+385940b HEAD@{16}: rebase finished: returning to refs/heads/develop
+385940b HEAD@{17}: rebase: checkout feature3
+155a09d HEAD@{18}: checkout: moving from feature4 to develop
+2b491e8 HEAD@{19}: commit: HW1-Git: change images
+3a0296e HEAD@{20}: commit: HW1-Git: body bg
+155a09d HEAD@{21}: checkout: moving from develop to feature4
+155a09d HEAD@{22}: checkout: moving from feature3 to develop
+385940b HEAD@{23}: commit: HW1-Git: change image
+dadc37b HEAD@{24}: commit: HW1-Git: add image
+155a09d HEAD@{25}: checkout: moving from develop to feature3
+155a09d HEAD@{26}: commit: HW1-Git: add images into index
+69db18f (feature2, feature1) HEAD@{27}: checkout: moving from HW1-Git to develop
+69db18f (feature2, feature1) HEAD@{28}: merge develop: Fast-forward
+4f97cc5 (origin/master, origin/HEAD, master) HEAD@{29}: checkout: moving from feature2 to HW1-Git
+69db18f (feature2, feature1) HEAD@{30}: checkout: moving from feature1 to feature2
+69db18f (feature2, feature1) HEAD@{31}: merge develop: Fast-forward
+01ff581 HEAD@{32}: checkout: moving from develop to feature1
+69db18f (feature2, feature1) HEAD@{33}: merge feature2: Fast-forward
+01ff581 HEAD@{34}: merge feature1: Fast-forward
+3e3e125 HEAD@{35}: checkout: moving from feature2 to develop
+69db18f (feature2, feature1) HEAD@{36}: commit: HW1-Git: add css into index
+a43bf04 HEAD@{37}: commit: HW1-Git: add css
+01ff581 HEAD@{38}: checkout: moving from feature1 to feature2
+01ff581 HEAD@{39}: commit: HW1-Git: add image
+85b2f42 HEAD@{40}: commit: HW1-Git: images
+3e3e125 HEAD@{41}: checkout: moving from develop to feature1
+3e3e125 HEAD@{42}: commit: HW1-Git: index file
+4f97cc5 (origin/master, origin/HEAD, master) HEAD@{43}: checkout: moving from master to develop
+4f97cc5 (origin/master, origin/HEAD, master) HEAD@{44}: commit: HW1-Git: init
+dbb24bd HEAD@{45}: clone: from https://github.com/yumyv/epam_fe_2019_myronets.git
