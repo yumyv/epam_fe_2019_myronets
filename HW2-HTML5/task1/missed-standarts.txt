@@ -1,0 +1,28 @@
+1. Added "doctype";
+2. Added "lang";
+3. Added "charset";
+4. Added "title";
+5. Added "body" end tag;
+6. Added class "up" to "header" tag;
+7. Added "alt" attribute for images;
+8. Deleted attributes "height" and "width" from "img" tags and added to "main.css;
+9. Changed "p" tags inside "a" tags to "span" whith new classes "plus" and "whiteColor", added to "main.css";
+10. Deleted attribute "align" from "legend" tag and added "text-align" for legend to "main.css;
+11. Added class "down" to "footer" tag;
+12. Added "picture" tag;
+13. Created "audio" folder, added audio file to index.html;
+14. Created "video" folder, added video file to index.html;
+15. Added some properties for ".audio-video" class in "main.css";
+16. Added "margin" for audio&video in "main.css";
+17. Deleted "Lato-SemiBold" from "fonts.css" because path doesn't exist;
+18. Replaced "fieldset" tags to "section";
+19. Replaced "legend" tags to "h3";
+20. Added properties for "section" and "h3" to "main.css" and "media.css".
+21. Added double-quotes for attributes and values.
+22. Closed single tags.
+23. Change id to camelCase.
+24. Edit spaces, tabs and new lines in html and css files.
+25. Deleted dublicate selectors from css file.
+26. Deleted unused selectors form css.
+
+ 
