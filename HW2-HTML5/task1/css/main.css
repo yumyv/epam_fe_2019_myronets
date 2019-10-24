@@ -49,6 +49,11 @@ video {
   margin: 10px;
 }
 
+video {
+  width: 320px;
+  height: 240px;
+}
+
 picture img {
   width: auto;
 }
