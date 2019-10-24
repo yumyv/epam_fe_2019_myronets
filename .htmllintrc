@@ -46,7 +46,7 @@
     "id-class-no-ad": true,
     "id-class-style": "camel",
     "class-no-dup": true,
-    "class-style": false,
+    "class-style":  "none"
     "id-class-ignore-regex": false,
     "img-req-alt": true,
     "img-req-src": true,
