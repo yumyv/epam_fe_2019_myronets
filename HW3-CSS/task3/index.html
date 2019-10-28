@@ -27,7 +27,7 @@
           <label for="userEmail">Email</label>
         </div>
         <div class="form__cell form__cell--md">
-          <input class="form__cell--wide" type="email" id="userEmail" placeholder="user@user.com" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required="required"/>
+          <input class="form__cell--wide" type="email" id="userEmail" placeholder="user@user.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required="required"/>
         </div>
       </div>
       <div class="form__row">
@@ -51,7 +51,7 @@
           <label for="overview">Overview</label>
         </div>
         <div class="form__cell form__cell--md">
-          <textarea class="form__cell--wide" name="overview" id="overview" rows="10"></textarea>
+          <textarea class="form__cell--wide" name="overview" id="overview" rows="10" required="required"></textarea>
         </div>
       </div>
       <div class="form__row">
@@ -83,7 +83,7 @@
           <label for="login">Login</label>
         </div>
         <div class="form__cell form__cell--md">
-          <input class="form__cell--wide" type="email" id="login" placeholder="user@user.com" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required="required"/>
+          <input class="form__cell--wide" type="email" id="login" placeholder="user@user.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required="required"/>
         </div>
       </div>
       <div class="form__row">
@@ -105,7 +105,7 @@
     <form class="form form--reg-width" action="#" method="get">
       <div class="form__heading">Registration</div>
       <div class="form__row">
-        <p>Common:</p>
+        <p class="form__subtitle">Common:</p>
       </div>
       <div class="form__row">
         <div class="form__cell form__cell--sm">
@@ -153,7 +153,7 @@
       </div>
 
       <div class="form__row">
-        <p>Address:</p>
+        <p class="form__subtitle">Address:</p>
       </div>
       <div class="form__row form__row--border">
         <div class="form__cell form__cell--sm">
@@ -170,7 +170,7 @@
       </div>
 
       <div class="form__row">
-        <p>Other:</p>
+        <p class="form__subtitle">Other:</p>
       </div>
       <div class="form__row">
         <div class="form__cell form__cell--sm">
@@ -190,7 +190,7 @@
       </div>
 
       <div class="form__row">
-        <p>Security:</p>
+        <p class="form__subtitle">Security:</p>
       </div>
       <div class="form__row">
         <div class="form__cell form__cell--sm">
@@ -216,7 +216,7 @@
           <label for="email">Email</label>
         </div>
         <div class="form__cell form__cell--sm">
-          <input class="form__cell--wide" type="email" id="email" placeholder="john_doe@gmail.com" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required="required"/>
+          <input class="form__cell--wide" type="email" id="email" placeholder="john_doe@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required="required"/>
         </div>
         <div class="form__cell form__cell--sm">
           <div class="form__text">* Field is required</div>
