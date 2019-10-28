@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+}
+
+body {
+  background: #eceff1;
+}
+
+.main {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+  background: white;
+}
+
+.calendar {
+  margin: 10px;
+  width: 420px;
+  font-size: 0;
+  display: inline-block;
+}
+
+.calendar__header {
+  color: white;
+  background: #4db6ac;
+}
+
+.calendar__heading {
+  padding: 15px 0 5px;
+  font-size: 28px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.calendar__cell {
+  width: 60px;
+  font-size: 18px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.calendar__cell:hover {
+  color: white;
+  background: #3f51b5;
+}
+
+.calendar__cell-text {
+  line-height: 41px;
+  display: inline-block;
+}
+
+.calendar__cell-current {
+  color: white;
+  background: #f06292;
+  display: inline-block;
+  position: relative;
+}
+
+.calendar__cell--current:hover {
+  background: #ec407a;
+}
+
+.calendar__cell--disabled {
+  cursor: default;
+}
+
+.calendar__cell--disabled:hover {
+  background: none;
+}
+
+.calendar__cell--inactive {
+  color: #9ea7aa;
+  background: #cfd8dc;
+}
+
+.calendar__cell--inactive:hover {
+  color: #9ea7aa;
+  background: #cfd8dc;
+}
+
+.calendar__label {
+  cursor: pointer;
+}
+
+.calendar__label-container {
+  padding: 10px;
+  width: 60px;
+  height: 41px;
+  box-sizing: border-box;
+}
+
+.calendar__checkbox {
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 41px;
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.calendar__checkbox:checked + .calendar__label-container {
+  color: white;
+  background: #3949ab;
+}
+
+.calendar__checkbox:checked + .calendar__vac-day {
+  background: #1e88e5;
+}

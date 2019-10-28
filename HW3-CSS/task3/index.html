@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <title>Home</title>
+</head>
+<body>
+<main class="main">
+  <article class="forms">
+    <h2 class="forms__heading">Feedback</h2>
+    <form class="form form--feedback-width" action="#" method="get">
+      <div class="form__heading">Feedback</div>
+      <div class="form__row">
+        <div class="form__cell form__cell--sm">
+          <label for="userName">First name</label>
+        </div>
+        <div class="form__cell form__cell--md">
+          <input class="form__cell--wide" type="text" id="userName" required="required"/>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__cell form__cell--sm">
+          <label for="userEmail">Email</label>
+        </div>
+        <div class="form__cell form__cell--md">
+          <input class="form__cell--wide" type="email" id="userEmail" placeholder="user@user.com" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required="required"/>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__cell form__cell--sm">
+          <label for="pros">Pros</label>
+        </div>
+        <div class="form__cell form__cell--md">
+          <input class="form__cell--wide" type="text" id="pros" placeholder="Main pros" required="required"/>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__cell form__cell--sm">
+          <label for="cons">Cons</label>
+        </div>
+        <div class="form__cell form__cell--md">
+          <input class="form__cell--wide" type="text" id="cons" placeholder="Main cons" required="required"/>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__cell form__cell--sm">
+          <label for="overview">Overview</label>
+        </div>
+        <div class="form__cell form__cell--md">
+          <textarea class="form__cell--wide" name="overview" id="overview" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__cell form__cell--sm">
+          <label for="rating">Rating</label>
+        </div>
+        <div class="form__cell form__cell--md">
+          <input type="number" id="rating" required="required"/>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__cell form__cell--align-right">
+          <input type="checkbox" id="subscr" name="subscrOk" required="required"/>
+          <label for="subscr">Subscribe me to the newsletters</label>
+        </div>
+      </div>
+      <div class="form__row form__row--align-center">
+        <div class="form__cell">
+          <input type="submit" name="Submit" value="Send">
+        </div>
+      </div>
+    </form>
+
+    <h2 class="forms__heading">Login</h2>
+    <form class="form form--login-width" action="#" method="get">
+      <div class="form__heading">Authorization</div>
+      <div class="form__row">
+        <div class="form__cell form__cell--sm">
+          <label for="login">Login</label>
+        </div>
+        <div class="form__cell form__cell--md">
+          <input class="form__cell--wide" type="email" id="login" placeholder="user@user.com" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required="required"/>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__cell form__cell--sm">
+          <label for="userPass">Password</label>
+        </div>
+        <div class="form__cell form__cell--md">
+          <input class="form__cell--wide" type="password" id="userPass" placeholder="password" required="required"/>
+        </div>
+      </div>
+      <div class="form__row form__row--align-center">
+        <div class="form__cell">
+          <input type="submit" name="submit" value="Submit">
+        </div>
+      </div>
+    </form>
+
+    <h2 class="forms__heading">Registration</h2>
+    <form class="form form--reg-width" action="#" method="get">
+      <div class="form__heading">Registration</div>
+      <div class="form__row">
+        <p>Common:</p>
+      </div>
+      <div class="form__row">
+        <div class="form__cell form__cell--sm">
+          <label for="name">Name</label>
+        </div>
+        <div class="form__cell form__cell--sm">
+          <input class="form__cell--wide" type="text" id="name" placeholder="John" required="required"/>
+        </div>
+        <div class="form__cell form__cell--sm">
+          <div class="form__text">* Field is required</div>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__cell form__cell--sm">
+          <label for="surname">Surname</label>
+        </div>
+        <div class="form__cell form__cell--sm">
+          <input class="form__cell--wide" type="text" id="surname" placeholder="Doe" required="required"/>
+        </div>
+        <div class="form__cell form__cell--sm">
+          <div class="form__text">* Field is required</div>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__cell form__cell--sm">
+          <p>Gender</p>
+        </div>
+        <div class="form__cell form__cell--md">
+          <input type="radio" id="male" name="gender" value="Male" required="required"/>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="Female" required="required"/>
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <div class="form__row form__row--border">
+        <div class="form__cell form__cell--sm">
+          <label for="birthDate">Date of birth</label>
+        </div>
+        <div class="form__cell form__cell--sm">
+          <input class="form__cell--wide" type="date" id="birthDate" required="required"/>
+        </div>
+        <div class="form__cell form__cell--sm">
+          <div class="form__text">* 01/01/1990</div>
+        </div>
+      </div>
+
+      <div class="form__row">
+        <p>Address:</p>
+      </div>
+      <div class="form__row form__row--border">
+        <div class="form__cell form__cell--sm">
+          <label for="country">Country</label>
+        </div>
+        <div class="form__cell form__cell--md">
+          <select class="form__cell--wide" name="country" id="country" required="required">
+            <option value="" selected="selected" disabled="disabled">Country</option>
+            <option value="ukraine">Ukraine</option>
+            <option value="germany">Germany</option>
+            <option value="usa">USA</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form__row">
+        <p>Other:</p>
+      </div>
+      <div class="form__row">
+        <div class="form__cell form__cell--sm">
+          <label for="color">Favourite color</label>
+        </div>
+        <div class="form__cell form__cell--md">
+          <input class="form__cell--wide" type="color" name="favcolor" id="color"/>
+        </div>
+      </div>
+      <div class="form__row form__row--border">
+        <div class="form__cell form__cell--sm">
+          <label for="file">Upload avatar</label>
+        </div>
+        <div class="form__cell form__cell--md">
+          <input class="form__cell--wide" type="file" id="file" accept="image/*" required="required"/>
+        </div>
+      </div>
+
+      <div class="form__row">
+        <p>Security:</p>
+      </div>
+      <div class="form__row">
+        <div class="form__cell form__cell--sm">
+          <label for="pass">Password</label>
+        </div>
+        <div class="form__cell form__cell--sm">
+          <input class="form__cell--wide" type="password" id="pass" placeholder="Your password" required="required"/>
+        </div>
+        <div class="form__cell form__cell--sm">
+          <div class="form__text">* Field is required</div>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__cell form__cell--sm">
+          <label for="confirmPass">Repeat password</label>
+        </div>
+        <div class="form__cell form__cell--sm">
+          <input class="form__cell--wide" type="password" id="confirmPass" required="required"/>
+        </div>
+      </div>
+      <div class="form__row form__row--border">
+        <div class="form__cell form__cell--sm">
+          <label for="email">Email</label>
+        </div>
+        <div class="form__cell form__cell--sm">
+          <input class="form__cell--wide" type="email" id="email" placeholder="john_doe@gmail.com" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required="required"/>
+        </div>
+        <div class="form__cell form__cell--sm">
+          <div class="form__text">* Field is required</div>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__cell form__cell--md">
+          <input type="checkbox" id="agree" name="agreeOk" required="required"/>
+          <label for="agree">I agree the Terms and conditions</label>
+        </div>
+        <div class="form__cell form__cell--sm">
+          <input type="submit" name="register" value="Register">
+        </div>
+      </div>
+    </form>
+  </article>
+</main>
+</body>
+</html>
