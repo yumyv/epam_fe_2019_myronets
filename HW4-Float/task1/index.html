@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="./css/normalize.css"/>
+  <link rel="stylesheet" href="./css/reset.css"/>
+  <link rel="stylesheet" href="./css/fonts.css"/>
+  <link rel="stylesheet" href="./css/main.css"/>
+  <title>Home</title>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <article class="header__logo logo">
+        <a class="logo__link" href="#">
+          <img class="header__logo-img logo__img" src="./img/logo.png" alt="logo"/>
+          <h2 class="header__logo-heading logo__heading">PixelStudio</h2>
+        </a>
+      </article>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="#">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">My work</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#aboutMe">About me</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Element</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<main class="main">
+  <div class="container">
+    <div class="row">
+      <h1 class="primary-heading">Welcome !</h1>
+    </div>
+    <div class="row clearfix">
+      <article class="welcome">
+        <h2 class="welcome__heading">
+          Welcome to<span class="welcome__heading welcome__heading--bold">PixelStudio</span>
+        </h2>
+        <p class="welcome__text">
+          From a designer’s perspective, it’s all about downloads. Some fonts are tightly held intellectual property
+          with very intentionally limited sharing. So, at a minimum, a Typography page must provide direct download or
+          instructions on how to get approval to obtain them. Most teams provide a downloadable ZIP that includes all
+          the files you need to install and use fonts locally. Headings are a critical contributor to page hierarchy.
+          Most systems offer at least four, although some offer many more. Page titles usually (but not always) align
+          with the largest heading level.
+        </p>
+        <p class="welcome__text welcome__text--bottom">
+          Additionally, some systems offer specialized headers outside the typical heading scale, such as a picture’s
+          caption or an eyebrow <span class="welcome__text welcome__text--bold">Morningstar Design System.</span> Just
+          because a header exists outside the traditional scale doesn’t mean it’s not a header viably reused across a
+          catalog.
+        </p>
+      </article>
+      <div class="slider">
+        <ul class="slider__list">
+          <li class="slider__item">
+            <img class="slider__img" src="./img/slider-img.png" alt="photo"/>
+          </li>
+        </ul>
+        <div class="slider__footer">
+          <p class="slider__footer-text">Magic grape</p>
+          <p class="slider__footer-text slider__footer-text--right-side">
+            <span class="slider__footer-text slider__footer-text--bold">1</span>/3
+          </p>
+        </div>
+        <div class="slider__btn slider__btn--prev"></div>
+        <div class="slider__btn slider__btn--next"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="common-info clearfix">
+        <section class="common-info__cell">
+          <div class="common-info__heading-container">
+            <div class="sprite common-info__pic common-info__pic--presentations"></div>
+            <h3 class="common-info__heading">What I do?</h3>
+          </div>
+          <p class="common-info__text">A misconception I debunk early and often: developing a typography system for UI
+            components is equivalent to solving.</p>
+        </section>
+        <section class="common-info__cell">
+          <div class="common-info__heading-container">
+            <div class="sprite common-info__pic common-info__pic--target"></div>
+            <h3 class="common-info__heading">Who I do it?</h3>
+          </div>
+          <p class="common-info__text">Article typography is made of headings, body text, and a few other components
+            like an captioned image.</p>
+        </section>
+        <section class="common-info__cell common-info__cell--last">
+          <div class="common-info__heading-container">
+            <div class="sprite common-info__pic common-info__pic--resume"></div>
+            <h3 class="common-info__heading">About me</h3>
+          </div>
+          <p class="common-info__text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
+            minus id quod maxime placeat.</p>
+        </section>
+      </div>
+    </div>
+    <div class="row">
+      <article class="about-me" id="aboutMe">
+        <h1 class="primary-heading">About me</h1>
+        <div class="about-me__container clearfix">
+          <div class="about-me__content">
+            <p class="about-me__text">
+              Applying heading scales shouldn’t require use of a specific HTML element. Instead, tease apart the two
+              concerns. A system should weave <a class="about-me__link" href="#">heading</a> levels consistently
+              throughout components and offers tools for adopters to do the same with their custom creations. In
+              particular, line-height is challenging. In some libraries, we’ll use conventions and tools to crop away
+              negative space established by line-height from all text included in components, as described in
+              <a class="about-me__link" href="#">Space in Design Systems</a>. Libraries cropping line height include
+              Morningstar Design System, Discovery Education’s Comet Design System.
+            </p>
+            <p class="about-me__quote about-me__quote--red about-me__quote--first">Advantages for the customers: using
+              the same design language for the complex interface, or even different digital channels, results in product
+              consistency and the reduction of cognitive load for the users.</p>
+            <p class="about-me__quote about-me__quote--blue">This is our journey to the the simplest and most beautiful
+              banking design in the world, as we see it. Light Bank was created by the UXDA team in order to inspire
+              change.</p>
+            <p class="about-me__quote about-me__quote--green">We encourage you to go one step further beyond average and
+              create the best financial solutions that your customers are seeking. We hope you can use this UX design
+              case study as a guide to get there.</p>
+            <h2 class="about-me__text-heading">Heading Levels and Special Cases</h2>
+            <p class="about-me__text about-me__text--top">
+              <span class="about-me__text about-me__text--big-letter">S</span>ystems can offer centrally-tuned
+              responsive type sizes across a predictable set of breakpoints. For body text, size increases slowly.<br/>As
+              a system gets started with type, dig into details and start some conventions, such as how you’ll cope with
+              line-height. However, avoid finalizing all rules before making the first thing. Instead, be comfortable
+              with chaos early and smooth details as a library takes shape. As you near a major release, lock in
+              conventions and ensure tools are consistently applied.
+            </p>
+            <h2 class="about-me__text-heading about-me__text-heading--bottom">Text color</h2>
+            <p class="about-me__text about-me__text--checked">
+              <span class="about-me__text about-me__text--bold">Primary</span>, for most interface text whether body or
+              heading.
+            </p>
+            <p class="about-me__text about-me__text--checked">
+              <span class="about-me__text about-me__text--bold">Secondary</span>, for diminished contrast (often, the
+              “gray text”) for supplemental information.
+            </p>
+            <p class="about-me__text about-me__text--checked">
+              <span class="about-me__text about-me__text--bold">Interactive</span>, not just for links but also flat
+              buttons, tab labels, and more.
+            </p>
+            <p class="about-me__text about-me__text--checked">
+              <span class="about-me__text about-me__text--bold">Disabled</span>, often resulting is especially lower
+              contrast treatments.
+            </p>
+            <p class="about-me__text about-me__text--checked">
+              <span class="about-me__text about-me__text--bold">An invitation</span> to contact a technical architect,
+              since a license for the font is required. Organizations requires this to control the recurring and often
+              non-trivial cost of hosting and serving the font.
+            </p>
+          </div>
+          <aside class="aside">
+            <section class="flickr">
+              <h2 class="aside__heading">From Flickr</h2>
+              <div class="flickr__container">
+                <div class="flickr__pic-container">
+                  <img class="flickr__img" src="./img/flickr/flickr1.png" alt="flickr img"/>
+                </div>
+                <div class="flickr__pic-container">
+                  <img class="flickr__img" src="./img/flickr/flickr2.png" alt="flickr img"/>
+                </div>
+                <div class="flickr__pic-container flickr__pic-container--last">
+                  <img class="flickr__img" src="./img/flickr/flickr3.png" alt="flickr img"/>
+                </div>
+                <div class="flickr__pic-container">
+                  <img class="flickr__img" src="./img/flickr/flickr4.png" alt="flickr img"/>
+                </div>
+                <div class="flickr__pic-container">
+                  <img class="flickr__img" src="./img/flickr/flickr5.png" alt="flickr img"/>
+                </div>
+                <div class="flickr__pic-container flickr__pic-container--last">
+                  <img class="flickr__img" src="./img/flickr/flickr6.png" alt="flickr img"/>
+                </div>
+              </div>
+            </section>
+            <section class="aside-nav">
+              <h2 class="aside__heading">Links</h2>
+              <ul class="aside-nav__list">
+                <li class="aside-nav__item">
+                  <a class="aside-nav__link" href="#">Themeforest</a>
+                </li>
+                <li class="aside-nav__item">
+                  <a class="aside-nav__link" href="#">GraphicRiver</a>
+                </li>
+                <li class="aside-nav__item">
+                  <a class="aside-nav__link" href="#">CodeCanyon</a>
+                </li>
+                <li class="aside-nav__item">
+                  <a class="aside-nav__link" href="#">ActiveDen</a>
+                </li>
+                <li class="aside-nav__item">
+                  <a class="aside-nav__link" href="#">3DOcean</a>
+                </li>
+                <li class="aside-nav__item">
+                  <a class="aside-nav__link" href="#">VideoHive</a>
+                </li>
+                <li class="aside-nav__item">
+                  <a class="aside-nav__link" href="#">Audiojungle</a>
+                </li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+      </article>
+    </div>
+    <div class="row">
+      <article class="contact clearfix" id="contact">
+        <h1 class="primary-heading">Contact</h1>
+        <div class="contact__container">
+          <h2 class="contact__text">Just say hello!</h2>
+          <form class="form" action="#" method="get">
+            <div class="form__row clearfix">
+              <div class="form__cell form__cell--left-side">
+                <label class="form__label" for="name">First name *</label>
+                <input class="form__input" type="text" id="name" placeholder="John" required="required"/>
+              </div>
+              <div class="form__cell form__cell--right-side">
+                <label class="form__label" for="lastName">Last name</label>
+                <input class="form__input" type="text" id="lastName" placeholder="Johnson"/>
+              </div>
+            </div>
+            <div class="form__row clearfix">
+              <div class="form__cell form__cell--left-side">
+                <label class="form__label" for="email">Email *</label>
+                <input class="form__input" type="email" id="email" placeholder="example@email.com" required="required"/>
+              </div>
+              <div class="form__cell form__cell--right-side">
+                <label class="form__label" for="phone">Phone *</label>
+                <input class="form__input" type="text" id="phone" placeholder="+ 000 123 456 789" required="required"/>
+              </div>
+            </div>
+            <div class="form__row">
+              <p class="form__text">Choose option:</p>
+            </div>
+            <div class="form__row">
+              <label class="form__radio-label">Male
+                <input class="form__radio-input" type="radio" id="male" name="gender" value="male"/>
+                <span class="form__radio-checkmark"></span>
+              </label>
+              <label class="form__radio-label">Female
+                <input class="form__radio-input" type="radio" id="female" name="gender" value="female"/>
+                <span class="form__radio-checkmark"></span>
+              </label>
+              <label class="form__radio-label">Other
+                <input class="form__radio-input" type="radio" id="other" name="gender" value="other"/>
+                <span class="form__radio-checkmark"></span>
+              </label>
+            </div>
+            <div class="form__row">
+              <label>
+                <textarea class="form__textarea" name="overview" id="overview" placeholder="Message"></textarea>
+              </label>
+            </div>
+            <div class="form__row">
+              <label class="form__check-label">Terms &amp; Conditions
+                <input class="form__check-input" type="checkbox" id="agree" name="agree" required="required"/>
+                <span class="form__check-checkmark"></span>
+              </label>
+            </div>
+            <div class="form__row">
+              <input class="form__submit" type="submit" name="submit" value="Submit"/>
+            </div>
+          </form>
+        </div>
+        <aside class="contact-info">
+          <h2 class="contact-info__heading">Contact information</h2>
+          <div class="contact-info__container">
+            <p class="contact-info__text">
+              Feel free to contact us for any of your questions, we’ll get back to you as soon as possible
+            </p>
+          </div>
+          <div class="contact-info__container contact-info__container--first">
+            <div class="sprite contact-info__pic contact-info__pic--address"></div>
+            <div class="contact-info__container-text">
+              <p class="contact-info__text">
+                Company name <span class="separator">|</span> 798 Street name <span class="separator">|</span>
+                999 00 City name
+              </p>
+            </div>
+          </div>
+          <div class="contact-info__container">
+            <div class="sprite contact-info__pic contact-info__pic--phone"></div>
+            <div class="contact-info__container-text">
+              <p class="contact-info__text">Phone:
+                <span class="contact-info__text contact-info__text--phone">+000 987654 321</span>
+              </p>
+            </div>
+          </div>
+          <div class="contact-info__container">
+            <div class="sprite contact-info__pic contact-info__pic--email"></div>
+            <div class="contact-info__container-text">
+              <p class="contact-info__text"><span class="contact-info__text contact-info__text--email">Email:</span>
+                <a class="contact-info__link" href="#">sales@yourcompany.com</a></p>
+            </div>
+          </div>
+        </aside>
+      </article>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="row clearfix">
+      <div class="footer__cell footer__cell--first">
+        <article class="logo">
+          <h2 class="footer__logo-heading logo__heading">PixelStudio</h2>
+        </article>
+        <p class="footer__text">
+          A true business companion a true business companion a true business companion A true business companion a
+          true business companion a true business companion
+        </p>
+        <div class="footer__soc-links">
+          <h4 class="footer__heading">Social</h4>
+          <a class="footer__soc-link footer__soc-link--youtube" href="#"></a>
+          <a class="footer__soc-link footer__soc-link--linkedin" href="#"></a>
+          <a class="footer__soc-link footer__soc-link--twitter" href="#"></a>
+          <a class="footer__soc-link footer__soc-link--fb" href="#"></a>
+        </div>
+      </div>
+      <div class="footer__cells-container">
+        <div class="footer__cell">
+          <h4 class="footer__heading">Features</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Engagement</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Retention</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Funnels</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__cell">
+          <h4 class="footer__heading">Resources</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Enterprice</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">SaaS</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Financial services</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Consumer Tech</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__cell">
+          <h4 class="footer__heading">Menu</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Home</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Portfolio</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">My work</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">About me</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Element</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__cell">
+          <h4 class="footer__heading">Information</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">About us</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Terms &amp; Conditions</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">User’s guide</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Support center</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Press info</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
