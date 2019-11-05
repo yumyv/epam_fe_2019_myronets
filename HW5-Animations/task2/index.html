@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <title>Home</title>
+</head>
+<body>
+<main class="main">
+  <header class="main__header">
+    <label for="burger"></label>
+    <input class="main__header-checkbox" type="checkbox" id="burger" name="burger"/>
+    <div class="main__burger">
+      <span class="main__burger-element"></span>
+      <span class="main__burger-element"></span>
+      <span class="main__burger-element"></span>
+      <span class="main__burger-element"></span>
+    </div>
+
+    <nav class="main__nav">
+      <ul class="main__nav-ul">
+        <li class="main__nav-item">
+          <a class="main__nav-link" href="#">
+            <label class="main__header-label" for="checkbox">Checkbox</label>
+          </a>
+        </li>
+        <li class="main__nav-item">
+          <a class="main__nav-link" href="#">
+            <label class="main__header-label" for="accordion">Accordion</label>
+          </a>
+        </li>
+        <li class="main__nav-item">
+          <a class="main__nav-link" href="#">
+            <label class="main__header-label" for="dropDown">+ Drop Down</label>
+          </a>
+          <input class="main__content-input" type="radio" id="dropDown" name="nav" value="dropDown"/>
+          <div class="main__nav-submenu">
+            <ul class="main__nav-ul">
+              <li class="main__nav-item main__nav-submenu-item">
+                <a class="main__nav-link main__nav-submenu-link" href="#">Checkbox</a>
+              </li>
+              <li class="main__nav-item main__nav-submenu-item">
+                <a class="main__nav-link main__nav-submenu-link" href="#">Accordion</a>
+              </li>
+              <li class="main__nav-item main__nav-submenu-item">
+                <a class="main__nav-link main__nav-submenu-link" href="#">Menu</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="main__content-container">
+    <input class="main__content-input" type="radio" id="checkbox" name="nav" value="checkbox"/>
+    <div class="main__content">
+      <h2 class="main__heading">Custom checkbox</h2>
+      <div class="main__custom-checkbox">
+        <label class="switch" for="slider">
+          <input class="switch__checkbox" type="checkbox" id="slider" name="slider"/>
+          <span class="switch__slider"></span>
+        </label>
+      </div>
+
+      <h2 class="main__heading">Custom checkbox (disabled)</h2>
+      <div class="main__custom-checkbox">
+        <label class="switch" for="disabled">
+          <input class="switch__checkbox" type="checkbox" id="disabled" name="disabled" disabled="disabled"/>
+          <span class="switch__slider switch__slider--disabled"></span>
+        </label>
+      </div>
+
+      <h2 class="main__heading">Custom checkbox (disabled and checked)</h2>
+      <div class="main__custom-checkbox">
+        <label class="switch" for="disabledChecked">
+          <input class="switch__checkbox" type="checkbox" id="disabledChecked" name="disabled-checked" disabled="disabled"/>
+          <span class="switch__slider switch__slider--disabled-checked"></span>
+        </label>
+      </div>
+    </div>
+
+    <input class="main__content-input" type="radio" id="accordion" name="nav" value="accordion"/>
+    <div class="main__content">
+      <h2 class="main__heading">Accordion</h2>
+      <div class="main__accordion-container">
+        <article class="accordion">
+          <h2 class="accordion__heading"><label class="accordion__label" for="acc1">Acc 1</label></h2>
+          <input class="accordion__input" type="checkbox" id="acc1" name="acc1"/>
+          <div class="accordion__content">
+            Acc 1 content
+          </div>
+        </article>
+
+        <article class="accordion">
+          <h2 class="accordion__heading"><label class="accordion__label" for="acc2">Acc 2</label></h2>
+          <input class="accordion__input" type="checkbox" id="acc2" name="acc2"/>
+          <div class="accordion__content">
+            Acc 2 content
+          </div>
+        </article>
+
+        <article class="accordion">
+          <h2 class="accordion__heading"><label class="accordion__label" for="acc3">Acc 3</label></h2>
+          <input class="accordion__input" type="checkbox" id="acc3" name="acc3"/>
+          <div class="accordion__content">
+            Acc 3 content
+          </div>
+        </article>
+      </div>
+
+      <h2 class="main__heading">Accordion (collapsible)</h2>
+      <div class="main__accordion-container">
+        <article class="accordion">
+          <h2 class="accordion__heading"><label class="accordion__label" for="acc4">Acc 4</label></h2>
+          <input class="accordion__input" type="radio" id="acc4" name="accRadio"/>
+          <div class="accordion__content accordion__content--big">
+            Acc 4 content
+          </div>
+        </article>
+
+        <article class="accordion">
+          <h2 class="accordion__heading"><label class="accordion__label" for="acc5">Acc 5</label></h2>
+          <input class="accordion__input" type="radio" id="acc5" name="accRadio"/>
+          <div class="accordion__content">
+            Acc 5 content
+          </div>
+        </article>
+
+        <article class="accordion">
+          <h2 class="accordion__heading"><label class="accordion__label" for="acc6">Acc 6</label></h2>
+          <input class="accordion__input" type="radio" id="acc6" name="accRadio"/>
+          <div class="accordion__content">
+            Acc 6 content
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>

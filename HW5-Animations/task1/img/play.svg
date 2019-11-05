@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 58 (101010) - https://sketch.com -->
+    <title>3B205BF6-ECC9-4D3E-97A3-A430233BF285</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Cards" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-750.000000, -465.000000)" id="Card/Recording/Normal">
+            <g transform="translate(14.000000, 14.000000)">
+                <g transform="translate(721.000000, 351.000000)">
+                    <g id="Card">
+                        <g id="Icon/Play" transform="translate(15.000000, 100.000000)">
+                            <g id="Play">
+                                <circle id="Oval" fill="#9B9B9B" cx="22.5" cy="22.5" r="22.5"></circle>
+                                <path d="M18.0599979,11.9124987 L32.2864054,20.8040034 C33.2230785,21.3894241 33.5078248,22.6233248 32.9224042,23.5599979 C32.7614427,23.8175361 32.5439437,24.0350352 32.2864054,24.1959966 L18.0599979,33.0875013 C17.1233248,33.672922 15.8894241,33.3881757 15.3040034,32.4515026 C15.1053389,32.1336394 15,31.7663442 15,31.3915047 L15,13.6084953 C15,12.5039258 15.8954305,11.6084953 17,11.6084953 C17.3748394,11.6084953 17.7421347,11.7138342 18.0599979,11.9124987 Z" id="Rectangle" fill="#FFFFFF"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
