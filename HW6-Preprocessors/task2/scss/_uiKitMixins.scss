@@ -1,0 +1,234 @@
+@import "uiKitVars";
+
+@mixin createBtn() {
+  $btnStyles: (primary: $primaryBg, secondary: $secondaryBg, success: $successBg, danger: $dangerBg, warning: $warningBg, info: $infoBg);
+  $btnHoverStyles: (primary: $primaryHoverBg, secondary: $secondaryHoverBg, success: $successHoverBg, danger: $dangerHoverBg, warning: $warningHoverBg, info: $infoHoverBg);
+  $btnActiveStyles: (primary: $primaryActiveBg, secondary: $secondaryActiveBg, success: $successActiveBg, danger: $dangerActiveBg, warning: $warningActiveBg, info: $infoActiveBg);
+
+  @each $btnName, $btnBg in $btnStyles {
+    .btn-#{$btnName} {
+      padding: 14px 2px;
+      min-width: 180px;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      color: $primaryColor;
+      font-family: $primaryFontFamily;
+      font-size: $primaryFontSize;
+      font-weight: $btnFontWeight;
+      line-height: $btnLineHeight;
+      box-shadow: 0 2px 2px 0 rgba(155, 155, 155, 0.5);
+      background: $btnBg;
+      outline: none;
+      cursor: pointer;
+      float: right;
+    }
+  }
+
+  @each $btnName, $btnBg in $btnHoverStyles {
+    .btn-#{$btnName}:hover {
+      background: $btnBg;
+    }
+  }
+
+  @each $btnName, $btnBg in $btnActiveStyles {
+    .btn-#{$btnName}[type=submit]:active {
+      background: $btnBg;
+    }
+  }
+}
+
+@mixin createTab() {
+  $tabStyles: (primary, warning);
+  $tabActiveStyles: (primary: $secondarySuccessBg, warning: $tabDangerBg);
+
+  @each $tabName in $tabStyles {
+    .tab-#{$tabName} {
+      padding: 10px 25px;
+      color: $inactiveColor;
+      font-family: $primaryFontFamily;
+      font-size: $tabFontSize;
+      line-height: $tabLineHeight;
+      text-align: center;
+      border: 1px solid $tabBorderColor;
+      cursor: pointer;
+      display: inline-block;
+    }
+  }
+
+  @each $tabName in $tabStyles {
+    .tab-#{$tabName}:hover {
+      color: $secondaryColor;
+      background: none;
+    }
+  }
+
+  @each $tabName, $tabBg in $tabActiveStyles {
+    .tab-#{$tabName}--active {
+      color: $primaryColor;
+      background: $tabBg;
+    }
+  }
+
+  @each $tabName in $tabStyles {
+    .tab-#{$tabName}:first-child {
+      border-radius: 5px 0 0 5px;
+    }
+  }
+
+  @each $tabName in $tabStyles {
+    .tab-#{$tabName}:last-child {
+      border-radius: 0 5px 5px 0;
+    }
+  }
+}
+
+@mixin createLightTab() {
+  $tabStyles: (primary-light, warning-light);
+  $tabActiveStyles: (primary-light: $secondarySuccessBg, warning-light: $tabDangerBg);
+
+  @each $tabName in $tabStyles {
+    .tab-#{$tabName} {
+      padding: 13px 5px;
+      min-width: 115px;
+      color: $inactiveColor;
+      font-family: $primaryFontFamily;
+      font-size: $tabFontSize;
+      line-height: $tabLineHeight;
+      text-align: center;
+      border-bottom: 2px solid $tabBorderColor;
+      cursor: pointer;
+      display: inline-block;
+    }
+  }
+
+  @each $tabName in $tabStyles {
+    .tab-#{$tabName}:hover {
+      color: $secondaryColor;
+      background: none;
+    }
+  }
+
+  @each $tabName, $tabBg in $tabActiveStyles {
+    .tab-#{$tabName}--active {
+      color: $secondaryColor;
+      border-bottom: 2px solid $tabBg;
+    }
+  }
+}
+
+@mixin createCheck() {
+  $checkStyles: (primary, secondary, success, danger, additional);
+  $checkAdditionalStyles: (primary: $primaryBg, secondary: $secondaryBg, success: $successBg, danger: $dangerBg, additional: $additionalBg);
+
+  @each $checkName, $checkBg in $checkAdditionalStyles {
+    .check-label-#{$checkName} {
+      color: $checkBg;
+      position: relative;
+      padding-left: 40px;
+      cursor: pointer;
+      user-select: none;
+
+      & .check-mark-#{$checkName} {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 30px;
+        width: 30px;
+        background-color: $checkDefaultBg;
+        border: 1px solid $checkDefaultBorderColor;
+        border-radius: 5px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          display: none;
+          left: 10px;
+          top: 7px;
+          width: 5px;
+          height: 10px;
+          border: solid $primaryColor;
+          border-width: 0 3px 3px 0;
+          transform: rotate(45deg);
+        }
+
+        &--inactive {
+          border: 1px solid $checkInactiveBorderColor;
+          background-color: $checkInactiveBg;
+        }
+      }
+
+      & input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      & input:checked ~ .check-mark-#{$checkName} {
+        background: $checkBg;
+        border: none;
+
+        &::after {
+          display: block;
+        }
+
+        &--inactive {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+@mixin createPagination() {
+  $paginationStyles: (primary, secondary, success, danger, additional);
+  $paginationAdditionalStyles: (primary: $primaryBg, secondary: $secondaryBg, success: $successBg, danger: $dangerBg, additional: $additionalBg);
+
+  @each $paginationName in $paginationStyles {
+    .pagination-#{$paginationName} {
+      margin-right: 20px;
+      padding: 11px 17px 10px 18px;
+      color: $secondaryColor;
+      font-family: $primaryFontFamily;
+      font-size: $paginationFontSize;
+      line-height: $paginationLineHeight;
+      border-radius: 5px;
+      background: $paginationBg;
+      cursor: pointer;
+      display: inline-block;
+    }
+  }
+
+  @each $paginationName in $paginationStyles {
+    .pagination-#{$paginationName}:hover {
+      background: $paginationHoverBg;
+    }
+  }
+
+  @each $paginationName, $paginationBg in $paginationAdditionalStyles {
+    .pagination-#{$paginationName}--active {
+      color: $primaryColor;
+      background: $paginationBg;
+    }
+  }
+
+  @each $paginationName, $paginationBg in $paginationAdditionalStyles {
+    .pagination-#{$paginationName}--inactive {
+      color: $paginationInactiveColor;
+    }
+  }
+
+  @each $paginationName in $paginationStyles {
+    .pagination-#{$paginationName}:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@include createBtn();
+@include createTab();
+@include createLightTab();
+@include createCheck();
+@include createPagination();

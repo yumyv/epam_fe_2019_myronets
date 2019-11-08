@@ -1,0 +1,351 @@
+@import "uiKitMain";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1410px;
+}
+
+.header {
+  background-image: $headerCover;
+  background-size: cover;
+  padding-bottom: 30px;
+
+  &__container {
+    margin-bottom: 380px;
+    position: relative;
+  }
+
+  &__heading {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 54px;
+  }
+
+  &__text {
+    color: #fff;
+    line-height: 21px;
+  }
+}
+
+.siteName {
+  margin: 30px 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 35px;
+  display: inline-block;
+}
+
+.nav {
+  margin: 42px 0;
+  right: 0;
+  position: absolute;
+  display: inline-block;
+
+  &__item {
+    margin-left: 35px;
+    color: #fff;
+    display: inline-block;
+  }
+
+  &__link {
+    color: #fff;
+    font-weight: bold;
+    line-height: 21px;
+    padding-bottom: 5px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      border-bottom: 2px solid #fff;
+    }
+  }
+}
+
+.tabs {
+  font-size: 0;
+  background: $tabsBg;
+
+  &__container {
+    padding: 20px 0;
+  }
+
+  &__item {
+    @include tabItem();
+  }
+
+  &__item--active {
+    @include tabActiveItem();
+  }
+}
+
+.main {
+  background: $mainBg;
+}
+
+.info {
+  padding-top: 60px;
+  color: #5d5d5d;
+
+  &--last {
+    padding-top: 40px;
+  }
+
+  &__heading {
+    margin-bottom: 15px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  &__text {
+    width: 940px;
+    line-height: 30px;
+  }
+}
+
+.rooms {
+  padding: 40px 0 5px;
+
+  &__heading {
+    margin-bottom: 20px;
+    color: #5d5d5d;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.room {
+  margin: 0 10px 50px 0;
+  color: #5d5d5d;
+  min-height: 400px;
+  width: 460px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 1px 8px 0 rgba(206, 206, 206, 0.5);
+  display: inline-block;
+
+  &--last {
+    margin-right: 0;
+  }
+
+  &__img {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  &__container {
+    padding: 20px;
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  &__heading {
+    margin: 0 0 25px 15px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__price {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 35px;
+    display: inline-block;
+  }
+
+  &__btn {
+    @include roomBtn();
+  }
+}
+
+.reviews {
+  color: #5d5d5d;
+
+  &__heading {
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.form {
+  padding-bottom: 45px;
+
+  &__label {
+    margin-right: 50px;
+  }
+
+  &__label--additional {
+    @include additionalCheckLabel();
+  }
+
+  &__mark--additional {
+    @include additionalCheckMark();
+  }
+
+  &__label--danger {
+    @include dangerCheckLabel();
+  }
+
+  &__mark--danger {
+    @include dangerCheckMark();
+  }
+
+  &__label--primary {
+    @include primaryCheckLabel();
+  }
+
+  &__mark--primary {
+    @include primaryCheckMark();
+  }
+
+  &__label--secondary {
+    @include secondaryCheckLabel();
+  }
+
+  &__mark--secondary {
+    @include secondaryCheckMark();
+  }
+
+  &__label--success {
+    @include successCheckLabel();
+  }
+
+  &__mark--success {
+    @include successCheckMark();
+  }
+}
+
+.review {
+  margin-bottom: 35px;
+  padding: 30px;
+  width: 940px;
+  border-radius: 8px;
+  background-color: $reviewBg;
+  color: #5d5d5d;
+
+  &__container {
+    margin-bottom: 20px;
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  &__name {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    display: inline-block;
+  }
+
+  &__place {
+    padding-right: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    display: inline-block;
+    border-right: 1px solid #d8d8d8;
+  }
+
+  &__status {
+    margin-left: 30px;
+    color: #4e92ff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    display: inline-block;
+  }
+
+  &__date {
+    font-size: 20px;
+    line-height: 28px;
+    float: right;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.pagination {
+  padding: 15px 0 120px;
+  width: 940px;
+  text-align: center;
+
+  &__item {
+    @include paginationItem();
+
+    &--active {
+      @include paginationActiveItem();
+    }
+
+    &--inactive {
+      @include paginationInactiveItem();
+    }
+  }
+}
+
+.footer {
+  padding: 55px 0 85px;
+  background: $footerBg;
+}
+
+.menu {
+  margin-right: 240px;
+  color: #5d5d5d;
+  display: inline-block;
+
+  &--last {
+    margin-right: 0;
+    margin-left: -60px;
+  }
+
+  &__heading {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    color: #5d5d5d;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+
+    &:hover {
+      color: #5d5d5d;
+      border-bottom: 1px solid #5d5d5d;
+    }
+  }
+}

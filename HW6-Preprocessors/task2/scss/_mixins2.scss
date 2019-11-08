@@ -1,0 +1,63 @@
+@mixin tabItem() {
+  @extend .tab-warning-light;
+}
+
+@mixin tabActiveItem() {
+  @extend .tab-warning-light--active;
+}
+
+@mixin roomBtn() {
+  @extend .btn-secondary;
+}
+
+@mixin additionalCheckLabel() {
+  @extend .check-label-additional;
+}
+
+@mixin additionalCheckMark() {
+  @extend .check-mark-additional;
+}
+
+@mixin dangerCheckLabel() {
+  @extend .check-label-danger;
+}
+
+@mixin dangerCheckMark() {
+  @extend .check-mark-danger;
+}
+
+@mixin primaryCheckLabel() {
+  @extend .check-label-primary;
+}
+
+@mixin primaryCheckMark() {
+  @extend .check-mark-primary;
+}
+
+@mixin secondaryCheckLabel() {
+  @extend .check-label-secondary;
+}
+
+@mixin secondaryCheckMark() {
+  @extend .check-mark-secondary;
+}
+
+@mixin successCheckLabel() {
+  @extend .check-label-success;
+}
+
+@mixin successCheckMark() {
+  @extend .check-mark-success;
+}
+
+@mixin paginationItem() {
+  @extend .pagination-secondary;
+}
+
+@mixin paginationActiveItem() {
+  @extend .pagination-secondary--active;
+}
+
+@mixin paginationInactiveItem() {
+  @extend .pagination-secondary--inactive;
+}
