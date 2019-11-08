@@ -1,0 +1,51 @@
+@import "colorMatrix";
+
+$primaryFontFamily: Roboto, Helvetica, Arial, sans-serif;
+$btnFontWeight: 500;
+$primaryFontSize: 18px;
+$tabFontSize: 20px;
+$paginationFontSize: 25px;
+$btnLineHeight: 21px;
+$tabLineHeight: 24px;
+$paginationLineHeight: 29px;
+
+$primaryColor: $white;
+$secondaryColor: $scorpion;
+$inactiveColor: $silverChalice;
+
+$tabBorderColor: $alto;
+$checkDefaultBorderColor: $DarkSilverChalice;
+$checkInactiveBorderColor: $mercury;
+$checkDefaultBg: $concrete;
+$checkInactiveBg: $alabaster;
+$paginationBg: $wildSand;
+$paginationHoverBg: $alto;
+$paginationInactiveColor: $alternateAlto;
+$additionalBg: $mineShaft;
+
+$primaryBg: $dodgerBlue;
+$primaryHoverBg: $royalBlue;
+$primaryActiveBg: $indigo;
+
+$secondaryBg: $tanHide;
+$secondaryHoverBg: $redDamask;
+$secondaryActiveBg: $copper;
+
+$successBg: $emerald;
+$successHoverBg: $apple;
+$successActiveBg: $darkApple;
+
+$dangerBg: $carnation;
+$dangerHoverBg: $crail;
+$dangerActiveBg: $tallPoppy;
+
+$warningBg: $sunglow;
+$warningHoverBg: $buttercup;
+$warningActiveBg: $goldTips;
+
+$infoBg: $java;
+$infoHoverBg: $blueChill;
+$infoActiveBg: $darkBlueChill;
+
+$secondarySuccessBg: $lightEmerald;
+$tabDangerBg: $cinnabar;
