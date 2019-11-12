@@ -186,15 +186,8 @@ body {
     &:checked + .nav__container {
       display: inline-block;
     }
-  }
 
-  &__checkbox {
-    top: -100%;
-    left: -100%;
-    opacity: 0;
-    position: absolute;
-
-    &:checked + .nav__radio {
+    &--close:checked + .nav__container {
       display: none;
     }
   }
