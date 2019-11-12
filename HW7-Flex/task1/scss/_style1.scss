@@ -1,0 +1,562 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primaryFont;
+  font-size: $primaryFontSize;
+  color: $primaryColor;
+}
+
+.header {
+  background: $headerBg;
+  position: relative;
+
+  &__wrapper {
+    min-height: 665px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__salt {
+    left: 31%;
+    position: absolute;
+
+    &-pic {
+      left: 115px;
+      top: 55px;
+      width: 55px;
+      height: 55px;
+      position: relative;
+    }
+
+    &::before {
+      content: "";
+      border-top: 250px solid $headerSaltBg;
+      border-right: 140px solid transparent;
+      border-left: 140px solid transparent;
+      position: absolute;
+    }
+  }
+
+  &__text {
+    bottom: 85px;
+    left: 130px;
+    position: relative;
+  }
+
+  &__pic {
+    position: relative;
+    top: 75px;
+    right: 20px;
+
+    &-img {
+      width: 420px;
+    }
+  }
+
+  &__author {
+    bottom: 60px;
+    right: 350px;
+  }
+}
+
+.nav {
+  top: 0;
+  right: 0;
+  height: 100%;
+  font-size: 0;
+  position: absolute;
+  display: inline-block;
+
+  &__buttons {
+    margin-top: 56px;
+    width: 75px;
+    display: inline-block;
+    position: relative;
+  }
+
+  &__link {
+    padding: 17px;
+    text-align: center;
+    position: relative;
+    display: block;
+
+    &:hover {
+      background: $collectionPotsBg;
+    }
+  }
+
+  &__label {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+
+    &--right {
+      left: 100px;
+      position: relative;
+    }
+  }
+
+  &__pic {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__close-btn {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    display: inline-block;
+  }
+
+  &__heading {
+    color: $white;
+    font-size: $primaryFontSize;
+    font-weight: bold;
+    line-height: 23px;
+    text-transform: uppercase;
+    display: inline-block;
+
+    &-container {
+      text-align: center;
+    }
+  }
+
+  &__categories {
+    padding: 30px 25px 0;
+    height: 100%;
+    font-size: $primaryFontSize;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__category {
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: $white;
+
+    &-pic {
+      width: 55px;
+      height: 55px;
+    }
+
+    &-text {
+      margin-top: 20px;
+      font-weight: 600;
+      line-height: 23px;
+      text-align: center;
+    }
+
+    &--last {
+      position: relative;
+      right: 80px;
+    }
+  }
+
+  &__container {
+    right: 0;
+    width: 380px;
+    height: 100%;
+    padding: 25px 25px 80px 30px;
+    vertical-align: top;
+    background: url(../img/menu-bg.jpg) center;
+    position: relative;
+    display: none;
+    animation-name: show;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  &__radio {
+    top: -100%;
+    left: -100%;
+    opacity: 0;
+    position: absolute;
+
+    &:checked + .nav__container {
+      display: inline-block;
+    }
+  }
+
+  &__checkbox {
+    top: -100%;
+    left: -100%;
+    opacity: 0;
+    position: absolute;
+
+    &:checked + .nav__radio {
+      display: none;
+    }
+  }
+}
+
+.search {
+  margin-top: 65px;
+  text-align: center;
+  font-size: $primaryFontSize;
+
+  &__form {
+    position: relative;
+  }
+
+  &__pic {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__field {
+    &::placeholder {
+      color: $placeholderColor;
+    }
+
+    &[type=text] {
+      padding: 10px 40px 10px 10px;
+      margin-top: 8px;
+      border: none;
+      color: $primaryColor;
+    }
+  }
+
+  &__submit {
+    right: 40px;
+    top: 10px;
+    padding: 6px 7px;
+    background: $secondaryColor;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+  }
+}
+
+.text {
+  line-height: 36px;
+  font-size: $secondaryFontSize;
+  position: relative;
+
+  &__heading {
+    margin-bottom: 5px;
+    font-weight: 300;
+  }
+
+  &__content {
+    font-weight: bold;
+  }
+
+  &--pots {
+    align-self: flex-start;
+    top: 35px;
+    right: 80px;
+  }
+
+  &--shakers {
+    align-self: flex-start;
+    top: 35px;
+    left: 45px;
+  }
+
+  &--bowls {
+    align-self: flex-start;
+    top: 35px;
+    right: 80px;
+  }
+}
+
+.author {
+  width: 280px;
+  text-align: center;
+  position: relative;
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__img {
+    margin-bottom: 10px;
+    width: 68px;
+  }
+
+  &__name {
+    margin-bottom: 27px;
+    color: $secondaryColor;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 23px;
+  }
+
+  &__text {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 53px;
+  }
+
+  &--pots {
+    right: 50px;
+  }
+
+  &--shakers {
+    left: 100px;
+  }
+
+  &--bowls {
+    right: 55px;
+    top: 25px;
+  }
+}
+
+.content {
+  min-height: 375px;
+  background: $primaryContentBg;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  &__img {
+    &--pots {
+      width: 311px;
+    }
+
+    &--shakers {
+      width: 230px;
+    }
+
+    &--bowls {
+      width: 340px;
+    }
+  }
+
+  &__text {
+    color: $additionalColor;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  &__pic {
+    align-self: flex-end;
+    position: relative;
+
+    &--pots {
+      bottom: -40px;
+      right: 130px;
+    }
+
+    &--shakers {
+      left: 40px;
+    }
+
+    &--bowls {
+      right: 100px;
+    }
+  }
+
+  &--rooms {
+    background-image: url(../img/rooms-bg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    justify-content: center;
+  }
+
+  &--bowls {
+    background: $bowlsContentBg;
+  }
+
+  &--footer {
+    background-image: url(../img/footer-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: $additionalColor;
+  }
+}
+
+.collection {
+  width: 372px;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-self: normal;
+  cursor: pointer;
+
+  &__pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  &__link {
+    color: $secondaryColor;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--shakers {
+      color: $collectionShakersColor;
+
+      &:hover {
+        color: $collectionShakersHoverBg;
+      }
+    }
+
+    &--bowls {
+      color: $collectionBowlsColor;
+
+      &:hover {
+        color: $collectionBowlsHoverBg;
+      }
+    }
+  }
+
+  &__heading {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+  }
+
+  &--pots {
+    background: $collectionPotsBg;
+
+    .collection__pic {
+      fill: $secondaryColor;
+    }
+
+    &:hover .collection__pic {
+      fill: $collectionPotsHoverBg;
+    }
+
+    &:hover .collection__link {
+      color: $collectionPotsHoverBg;
+    }
+
+    &::before {
+      @include collection-edge(135deg, $collectionPotsBg, right);
+    }
+
+    &::after {
+      @include collection-edge(45deg, $collectionPotsBg, right);
+    }
+  }
+
+  &--shakers {
+    width: 361px;
+    background: $collectionShakersBg;
+
+    .collection__pic--shakers {
+      fill: $collectionShakersColor;
+    }
+
+    &:hover .collection__pic {
+      fill: $collectionShakersHoverBg;
+    }
+
+    &:hover .collection__link {
+      color: $collectionShakersHoverBg;
+    }
+
+    &::before {
+      @include collection-edge(225deg, $collectionShakersBg, left);
+    }
+
+    &::after {
+      @include collection-edge(315deg, $collectionShakersBg, left);
+    }
+  }
+
+  &--bowls {
+    background: $collectionBowlsBg;
+
+    .collection__pic--bowls {
+      fill: $collectionBowlsColor;
+    }
+
+    &:hover .collection__pic {
+      fill: $collectionBowlsHoverBg;
+    }
+
+    &:hover .collection__link {
+      color: $collectionBowlsHoverBg;
+    }
+
+    &::before {
+      @include collection-edge(135deg, $collectionBowlsBg, right);
+    }
+
+    &::after {
+      @include collection-edge(45deg, $collectionBowlsBg, right);
+    }
+  }
+}
+
+.rooms-element {
+  width: 140px;
+  height: 140px;
+  background: $roomsElemBg;
+  border-radius: 50%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 215px;
+
+  &__pic {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__text {
+    font-size: $secondaryFontSize;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+}
+
+.logo {
+  position: relative;
+  top: 90px;
+  right: 80px;
+
+  &__heading {
+    margin-top: 10px;
+    color: $additionalColor;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  &__pic {
+    @include make-logo($primaryLogoBg, $secondaryLogoBg, $additionalLogoBg, 35);
+  }
+}
+
+.footer-wrapper {
+  padding-left: 50px;
+  padding-top: 180px;
+}
+
+.footer-container {
+  margin-bottom: 40px;
+
+  &__link {
+    margin-right: 40px;
+  }
+
+  &__pic {
+    width: 70px;
+    height: 70px;
+  }
+}
