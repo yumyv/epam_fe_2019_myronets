@@ -1,0 +1,40 @@
+@mixin makeInput($inputBorder, $placeholderColor, $inputActiveBorder, $inputInvalidBorder) {
+  margin-bottom: 2em;
+  min-width: 17.5em;
+  padding: 0.7em 0.5em;
+  border: 1px solid $inputBorder;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: $placeholderColor;
+  }
+
+  &:focus {
+    border: 1px solid $inputActiveBorder;
+  }
+
+  &:invalid {
+    border: 1px solid $inputInvalidBorder;
+  }
+}
+
+@mixin makeSubmit($btnBg, $secondaryColor, $btnHoverBg) {
+  min-width: 8.7em;
+  padding: 0.8em 0.5em;
+  border: none;
+  border-radius: 3px;
+  background-color: $btnBg;
+  box-shadow: 0 3px 4px 0 rgba(72, 72, 72, 0.5);
+  color: $secondaryColor;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 19px;
+
+  &--wide {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: $btnHoverBg;
+  }
+}
