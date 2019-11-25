@@ -12,13 +12,6 @@
     "jest": true
   },
   "rules": {
-    "no-console":
-    [
-      "error",
-      {
-        "allow": ["warn", "error"]
-      }
-    ],
     "dot-notation": "error",
     "dot-location": [
       "error",
@@ -102,7 +95,6 @@
       }
     ],
     "no-negated-condition": "error",
-    "no-nested-ternary": "error",
     "no-tabs": "error",
     "no-trailing-spaces": "error",
     "no-unneeded-ternary": "error",
