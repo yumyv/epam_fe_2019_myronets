@@ -9,19 +9,17 @@
   <title>Home</title>
 </head>
 <body>
-<header class="header">
+<header class="header header--bg">
   <div class="container">
     <div class="row">
       <div class="header__logo logo">
         <a class="logo__link" href="#"><h4 class="logo__heading">BlogWorld</h4></a>
       </div>
-      <nav class="header__nav nav">
+      <nav class="header__nav header__nav--home nav">
         <ul class="nav__list">
           <li class="nav__item">
             <input class="nav__radio" type="radio" id="home" name="menu" checked="checked"/>
-            <a class="nav__link" href="#">
-              <label class="nav__label" for="home"></label>Home
-            </a>
+            <a class="nav__link" href="#"><label class="nav__label" for="home"></label>Home</a>
           </li>
           <li class="nav__item">
             <input class="nav__radio" type="radio" id="portfolioNav" name="menu"/>
@@ -67,7 +65,7 @@
   <div class="container">
     <div class="row">
       <div class="main-heading">
-        <h2 class="main-heading__text">About us</h2>
+        <h2 class="main-heading__text">About us<span class="main-heading__element"></span></h2>
       </div>
     </div>
     <div class="row">
@@ -119,7 +117,7 @@
   <div class="container">
     <div class="row">
       <div class="latest-posts__heading main-heading">
-        <h2 class="main-heading__text">Latest posts</h2>
+        <h2 class="main-heading__text">Latest posts<span class="main-heading__element"></span></h2>
       </div>
     </div>
     <div class="row">
@@ -169,7 +167,9 @@
                 </p>
                 <div class="latest-post__container">
                   <span class="latest-post__date">11 oct, 2019</span>
+                  <span class="latest-post__dot"></span>
                   <span class="latest-post__status">7 min read</span>
+                  <span class="latest-post__dot"></span>
                   <svg class="latest-post__pic">
                     <use href="./img/sprite.svg#a-icon-comment"></use>
                   </svg>
@@ -179,7 +179,7 @@
             </li>
             <li class="posts-slider__item">
               <article class="latest-post">
-                <img class="latest-post__img" src="./img/Img-post-1.jpg" alt="latest-post">
+                <img class="latest-post__img" src="./img/Img-post-3.jpg" alt="latest-post">
                 <a class="latest-post__link" href="#">
                   <h3 class="latest-post__heading">How the Internet of Things will Transfo…</h3>
                 </a>
@@ -190,7 +190,9 @@
                 </p>
                 <div class="latest-post__container">
                   <span class="latest-post__date">28 sep, 2019</span>
+                  <span class="latest-post__dot"></span>
                   <span class="latest-post__status">16 min read</span>
+                  <span class="latest-post__dot"></span>
                   <svg class="latest-post__pic">
                     <use href="./img/sprite.svg#a-icon-comment"></use>
                   </svg>
@@ -208,7 +210,7 @@
   <div class="container">
     <div class="row">
       <div class="main-heading">
-        <h2 class="main-heading__text">Latest portfolio</h2>
+        <h2 class="main-heading__text">Latest portfolio<span class="main-heading__element"></span></h2>
       </div>
     </div>
     <div class="row">
@@ -268,7 +270,7 @@
   <div class="container">
     <div class="row">
       <div class="main-heading">
-        <h2 class="main-heading__text">Testimonials</h2>
+        <h2 class="main-heading__text">Testimonials<span class="main-heading__element"></span></h2>
       </div>
     </div>
     <div class="row">
@@ -306,7 +308,7 @@
 <div class="container">
   <div class="row">
     <div class="contact-us__heading main-heading">
-      <h2 class="main-heading__text">Contact us</h2>
+      <h2 class="main-heading__text">Contact us<span class="main-heading__element"></span></h2>
     </div>
   </div>
   <div class="row">
@@ -406,7 +408,7 @@
     </div>
   </div>
 </section>
-<footer class="footer">
+<footer class="footer footer--home">
   <div class="container">
     <div class="row">
       <div class="footer__container">

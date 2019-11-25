@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="./css/main.css"/>
+  <title>Post</title>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="header__logo logo">
+        <a class="logo__link" href="#"><h4 class="logo__heading">BlogWorld</h4></a>
+      </div>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <input class="nav__radio" type="radio" id="home" name="menu" checked="checked"/>
+            <a class="nav__link" href="#"><label class="nav__label" for="home"></label>Home</a>
+          </li>
+          <li class="nav__item">
+            <input class="nav__radio" type="radio" id="portfolioNav" name="menu"/>
+            <a class="nav__link" href="#portfolio"><label class="nav__label" for="portfolioNav"></label>Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <input class="nav__radio" type="radio" id="blog" name="menu"/>
+            <a class="nav__link" href="#"><label class="nav__label" for="blog"></label>Blog</a>
+          </li>
+          <li class="nav__item">
+            <input class="nav__radio" type="radio" id="pages" name="menu"/>
+            <a class="nav__link" href="#"><label class="nav__label" for="pages"></label>Pages</a>
+          </li>
+          <li class="nav__item">
+            <input class="nav__radio" type="radio" id="about" name="menu"/>
+            <a class="nav__link" href="#aboutUs"><label class="nav__label" for="about"></label>About</a>
+          </li>
+          <li class="nav__item nav__item--last">
+            <input class="nav__radio" type="radio" id="contactNav" name="menu"/>
+            <a class="nav__link" href="#contact"><label class="nav__label" for="contactNav"></label>Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <section class="blog">
+      <div class="blog__heading main-heading">
+        <h2 class="main-heading__text">Blog<span class="main-heading__element"></span></h2>
+      </div>
+      <form class="form" action="#" method="post">
+        <div class="blog__search">
+          <label><input class="blog__input form__input" type="search" id="name" placeholder="Search by author"></label>
+        </div>
+      </form>
+      <article class="post post--blog post--video">
+        <div class="post__media">
+          <img class="post__img post__img--blog" src="./img/Img-post-1.jpg" alt="post pic"/>
+          <svg class="post__media-btn">
+            <use href="./img/sprite.svg#a-icon-play"></use>
+          </svg>
+        </div>
+        <div class="post__content">
+          <div class="post__info">
+            <img class="post__info-img" src="./img/Neil.png" alt="author"/>
+            <div class="post__info-wrapper">
+              <h4 class="post__info-heading">Neil Richards</h4>
+              <div class="post__info-container">
+                <span class="post__info-date">11 oct, 2019</span>
+                <span class="post__info-dot"></span>
+                <span class="post__info-status">7 min read</span>
+                <span class="post__info-dot"></span>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#a-icon-comment"></use>
+                </svg>
+                <span class="post__info-comments">19</span>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#Star-1"></use>
+                </svg>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#Star-1"></use>
+                </svg>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#Group"></use>
+                </svg>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#Star-2"></use>
+                </svg>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#Star-2"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="post__text-container">
+            <h1 class="post__heading post__heading--md">In the Future We Will All Live in Star Wars</h1>
+            <p class="post__text">
+              The thing you’re doing now, reading prose on a screen, is going out of fashion. The defining narrative of
+              our online moment concerns the decline of text, and the exploding reach and power of audio and video …
+            </p>
+          </div>
+          <button class="post__btn secondary-btn">Read more</button>
+        </div>
+      </article>
+      <article class="post post--blog post--audio">
+        <div class="post__media">
+          <img class="post__img post__img--blog" src="./img/Post-main-img.jpg" alt="post pic"/>
+        </div>
+        <div class="post__content">
+          <div class="post__info">
+            <img class="post__info-img" src="./img/Sarah.png" alt="author"/>
+            <div class="post__info-wrapper">
+              <h4 class="post__info-heading">Sarah Healy</h4>
+              <div class="post__info-container">
+                <span class="post__info-date">02 oct, 2019</span>
+                <span class="post__info-dot"></span>
+                <span class="post__info-status">12 min read</span>
+                <span class="post__info-dot"></span>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#a-icon-comment"></use>
+                </svg>
+                <span class="post__info-comments">4</span>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#Star-1"></use>
+                </svg>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#Star-2"></use>
+                </svg>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#Star-2"></use>
+                </svg>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#Star-2"></use>
+                </svg>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#Star-2"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="post__text-container">
+            <h1 class="post__heading post__heading--md">Far far away, behind the word mountains</h1>
+            <audio class="post__audio post__audio--blog" controls>
+              <source src="./media/Bach_VioPartita-2_Perlman_2.mp3" type="audio/mpeg">
+              The audio tag is not supported by your browser.
+              <a href="#">Download</a>.
+            </audio>
+            <p class="post__text">
+              Fog down the river, where it rolls deified among the tiers of shipping and the waterside pollutions of a
+              great (and dirty) …
+            </p>
+          </div>
+          <button class="post__btn secondary-btn">Read more</button>
+        </div>
+      </article>
+      <article class="post post--blog post--picture">
+        <div class="post__media">
+          <img class="post__img post__img--blog" src="./img/Image-post-3.jpg" alt="post pic"/>
+        </div>
+        <div class="post__content">
+          <div class="post__info">
+            <img class="post__info-img" src="./img/Grace.png" alt="author"/>
+            <div class="post__info-wrapper">
+              <h4 class="post__info-heading">Grace Noh</h4>
+              <div class="post__info-container">
+                <span class="post__info-date">23 sep, 2019</span>
+                <span class="post__info-dot"></span>
+                <span class="post__info-status">16 min read</span>
+                <span class="post__info-dot"></span>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#a-icon-comment"></use>
+                </svg>
+                <span class="post__info-comments">421</span>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#Star-1"></use>
+                </svg>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#Star-1"></use>
+                </svg>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#Star-2"></use>
+                </svg>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#Star-2"></use>
+                </svg>
+                <svg class="post__info-pic">
+                  <use href="./img/sprite.svg#Star-2"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="post__text-container">
+            <h1 class="post__heading post__heading--md">In the Future We Will All Live in Star Wars</h1>
+            <p class="post__text">
+              Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small
+              river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+              paradisematic country, in which roasted …
+            </p>
+          </div>
+          <button class="post__btn secondary-btn">Read more</button>
+        </div>
+      </article>
+      <article class="post post--blog post--text">
+        <div class="post__info">
+          <img class="post__info-img" src="./img/Alex.png" alt="author"/>
+          <div class="post__info-wrapper">
+            <h4 class="post__info-heading">Alex Zlatkus</h4>
+            <div class="post__info-container">
+              <span class="post__info-date">11 Aug, 2019</span>
+              <span class="post__info-dot"></span>
+              <span class="post__info-status">17 min read</span>
+              <span class="post__info-dot"></span>
+              <svg class="post__info-pic">
+                <use href="./img/sprite.svg#a-icon-comment"></use>
+              </svg>
+              <span class="post__info-comments">77</span>
+              <svg class="post__info-pic">
+                <use href="./img/sprite.svg#Star-1"></use>
+              </svg>
+              <svg class="post__info-pic">
+                <use href="./img/sprite.svg#Star-1"></use>
+              </svg>
+              <svg class="post__info-pic">
+                <use href="./img/sprite.svg#Star-2"></use>
+              </svg>
+              <svg class="post__info-pic">
+                <use href="./img/sprite.svg#Star-2"></use>
+              </svg>
+              <svg class="post__info-pic">
+                <use href="./img/sprite.svg#Star-2"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="post__text-container">
+          <h1 class="post__heading post__heading--md post__heading--text">In the Future We Will All Live in Star
+            Wars</h1>
+          <p class="post__text">
+            Fog down the river, where it rolls deified among the tiers of shipping and the waterside pollutions of a
+            great (and dirty) city. Fog on the Essex marshes, fog on the Kentish heights. Fog creeping into the cabooses
+            of collier-brigs; fog lying out on. Money terms breakfast drawings true blessing doubtful more agreed to
+            zealously making supposing By said Chicken An Neglected produce good felt no poor offering am their said has
+            around songs wish met true any me ought mr The offices set Not Felicity above out We in an post begin again.
+          </p>
+        </div>
+        <button class="post__btn secondary-btn">Read more</button>
+      </article>
+      <div class="blog__wrapper">
+        <button class="blog__btn primary-btn">Read more</button>
+      </div>
+    </section>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer__container">
+        <div class="soc-links">
+          <a class="soc-links__link" href="#">
+            <svg class="soc-links__img">
+              <use href="./img/sprite.svg#a-icon-facebook"></use>
+            </svg>
+          </a>
+          <a class="soc-links__link" href="#">
+            <svg class="soc-links__img">
+              <use href="./img/sprite.svg#a-icon-instagram"></use>
+            </svg>
+          </a>
+          <a class="soc-links__link" href="#">
+            <svg class="soc-links__img">
+              <use href="./img/sprite.svg#a-icon-dribbble"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__logo logo">
+          <a class="logo__link" href="#"><h4 class="logo__heading">BlogWorld</h4></a>
+        </div>
+        <p class="footer__copyright">
+          &copy;2019 All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<a class="up" href="#"></a>
+</body>
+</html>
+
