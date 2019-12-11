@@ -66,10 +66,10 @@
       "off", // TODO: Discuss this
       120
     ],
-    "max-lines": [
-      "warn", // TODO: Switch it to error
-      300
-    ],
+//    "max-lines": [
+//      "warn", // TODO: Switch it to error
+//      300
+//    ],
     "max-nested-callbacks": [
       "error",
       3
