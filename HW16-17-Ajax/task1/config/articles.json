@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "type": "video",
+    "author": "Neil Richards",
+    "heading": "In the Future We Will All Live in Star Wars",
+    "date": "11 oct, 2019",
+    "time": "7 min read",
+    "imgAvatarUrl": "./img/Neil.png",
+    "imgUrl": "./img/Img-post-1.jpg",
+    "mediaUrl": "",
+    "videoBtnUrl": "./img/sprite.svg#a-icon-play",
+    "imgCommentsUrl": "./img/sprite.svg#a-icon-comment",
+    "imgFullStarUrl": "./img/sprite.svg#Star-1",
+    "imgHalfStarUrl": "./img/sprite.svg#Group",
+    "imgEmptyStarUrl": "./img/sprite.svg#Star-2",
+    "imgEmptyLikeUrl": "./img/sprite.svg#a-icon-like-1",
+    "countOfComments": 19,
+    "countOfFullStars": 2,
+    "countOfHalfStars": 1,
+    "countOfEmptyStars": 2,
+    "countOfLikes": 0,
+    "text": "The thing you’re doing now, reading prose on a screen, is going out of fashion. The defining narrative of our online moment concerns the decline of text, and the exploding reach and power of audio and video …",
+    "quote": "",
+    "btn": {
+      "text": "Read more"
+    },
+    "socialLinks": []
+  },
+  {
+    "id": 2,
+    "type": "audio",
+    "author": "Sarah Healy",
+    "heading": "Fog up the river, where it flows among green aits and meadows",
+    "date": "02 oct, 2019",
+    "time": "12 min read",
+    "imgAvatarUrl": "./img/Sarah.png",
+    "imgUrl": "./img/Post-main-img.jpg",
+    "mediaUrl": "./media/Bach_VioPartita-2_Perlman_2.mp3",
+    "videoBtnUrl": "",
+    "imgCommentsUrl": "./img/sprite.svg#a-icon-comment",
+    "imgFullStarUrl": "./img/sprite.svg#Star-1",
+    "imgHalfStarUrl": "./img/sprite.svg#Group",
+    "imgEmptyStarUrl": "./img/sprite.svg#Star-2",
+    "imgLikeUrl": "./img/sprite.svg#a-icon-like-1",
+    "countOfComments": 4,
+    "countOfFullStars": 1,
+    "countOfHalfStars": 0,
+    "countOfEmptyStars": 4,
+    "countOfLikes": 75,
+    "text": "The thing you’re doing now, reading prose on a screen, is going out of fashion. The defining narrative of our online moment concerns the decline of text, and the exploding reach and power of audio and video. Which come particular teens wasn't. Own day designed suspension conflict unlawful. I'll stayed liable i've. Interact minutes see night translate. Number interact already promotion someone thought run same why one it very. Fifteen problem friend editing away proprietary words shivering shivered. Shivers special worried in waive this we. Spider 13 house same avoid. Coffee including products violation legs my defamatory predominantly important again strictly. Including budgie we materials 17 hand harassing calling offensive relating. Faints comes everyone this developed specialises parties scream. Aren't stopped mean little me but what lower problem. Can usually. Middle posts you sometimes can yes that's rules breach.Same took made faints aged. All Impersonating these. Costsquite full make new. Well see does data friend breach obliged scream no wasn't. Saw that's methods act. Working approach users what over register. Think the. Perform groups. In unacceptable by should off. About incitement rabbit working temporarily that is against trademark herself might i'm. Stopped Special stayed supply predominantly plastic in worldwide hypnotised damaging further exercise. Refused reproduce furry publicise week learners really decided text usernames racially happened. Become come glass even see you uncommon eventually relating fifteen.",
+    "quote": "Voice command is really very fast. A person does not need to learn how to navigate the graphical interface and how to use it for an intended purpose. We began to speak almost from birth, and this our skill is very well developed.",
+    "btn": {
+      "text": "Read more"
+    },
+    "socialLinks": [
+      {
+        "name": "facebook",
+        "imgUrl": "./img/sprite.svg#a-icon-facebook",
+        "link": "#"
+      },
+      {
+        "name": "dribbble",
+        "imgUrl": "./img/sprite.svg#a-icon-dribbble",
+        "link": "#"
+      },
+      {
+        "name": "instagram",
+        "imgUrl": "./img/sprite.svg#a-icon-instagram",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "picture",
+    "author": "Grace Noh",
+    "heading": "In the Future We Will All Live in Star Wars",
+    "date": "23 sep, 2019",
+    "time": "16 min read",
+    "imgAvatarUrl": "./img/Grace.png",
+    "imgUrl": "./img/Image-post-3.jpg",
+    "mediaUrl": "",
+    "videoBtnUrl": "",
+    "imgCommentsUrl": "./img/sprite.svg#a-icon-comment",
+    "imgFullStarUrl": "./img/sprite.svg#Star-1",
+    "imgHalfStarUrl": "./img/sprite.svg#Group",
+    "imgEmptyStarUrl": "./img/sprite.svg#Star-2",
+    "imgEmptyLikeUrl": "./img/sprite.svg#a-icon-like-1",
+    "countOfComments": 421,
+    "countOfFullStars": 2,
+    "countOfHalfStars": 0,
+    "countOfEmptyStars": 3,
+    "countOfLikes": 0,
+    "text": "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted …",
+    "quote": "",
+    "btn": {
+      "text": "Read more"
+    },
+    "socialLinks": []
+  },
+  {
+    "id": 4,
+    "type": "text",
+    "author": "Alex Zlatkus",
+    "heading": "In the Future We Will All Live in Star Wars",
+    "date": "11 Aug, 2019",
+    "time": "17 min read",
+    "imgAvatarUrl": "./img/Alex.png",
+    "imgUrl": "",
+    "mediaUrl": "",
+    "videoBtnUrl": "",
+    "imgCommentsUrl": "./img/sprite.svg#a-icon-comment",
+    "imgFullStarUrl": "./img/sprite.svg#Star-1",
+    "imgHalfStarUrl": "./img/sprite.svg#Group",
+    "imgEmptyStarUrl": "./img/sprite.svg#Star-2",
+    "imgEmptyLikeUrl": "./img/sprite.svg#a-icon-like-1",
+    "countOfComments": 77,
+    "countOfFullStars": 2,
+    "countOfHalfStars": 0,
+    "countOfEmptyStars": 3,
+    "countOfLikes": 0,
+    "text": "Fog down the river, where it rolls deified among the tiers of shipping and the waterside pollutions of a great (and dirty) city. Fog on the Essex marshes, fog on the Kentish heights. Fog creeping into the cabooses of collier-brigs; fog lying out on. Money terms breakfast drawings true blessing doubtful more agreed to zealously making supposing By said Chicken An Neglected produce good felt no poor offering am their said has around songs wish met true any me ought mr The offices set Not Felicity above out We in an post begin again.",
+    "quote": "",
+    "btn": {
+      "text": "Read more"
+    },
+    "socialLinks": []
+  }
+]

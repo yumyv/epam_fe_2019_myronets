@@ -1,3 +1,8 @@
 dist/
 src/**/styles/
 .idea/
+HW16-17-Ajax/task1/api.js
+HW16-17-Ajax/task1/libs/config.js
+HW16-17-Ajax/task1/libs/log.js
+HW16-17-Ajax/task1/libs/mongoose.js
+HW16-17-Ajax/task1/server.js
