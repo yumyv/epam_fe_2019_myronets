@@ -14,7 +14,7 @@
   "rules": {
     "no-console":
     [
-      "error",
+      "off",
       {
         "allow": ["warn", "error"]
       }
