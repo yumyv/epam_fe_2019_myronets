@@ -1,0 +1,178 @@
+@mixin makePrimaryBtn($color, $bg, $hoverBg) {
+  padding: 10px 20px;
+  border: none;
+  color: $color;
+  line-height: 25px;
+  border-radius: 5px;
+  background-color: $bg;
+
+  &:hover {
+    background-color: $hoverBg;
+  }
+
+  &--disabled {
+    opacity: 0.4;
+  }
+}
+
+@mixin makeSecondaryBtn($primaryColor, $hoverBg, $secondaryColor) {
+  padding: 10px 20px;
+  color: $primaryColor;
+  line-height: 25px;
+  border: 1px solid $primaryColor;
+  border-radius: 5px;
+  background: none;
+
+  &:hover {
+    background-color: $hoverBg;
+    color: $secondaryColor;
+  }
+
+  &--disabled {
+    opacity: 0.4;
+  }
+}
+
+@mixin makeInput($inputBorder, $primaryColor, $inputInvalidBorder) {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid $inputBorder;
+  border-radius: 5px;
+  display: block;
+
+  &:focus {
+    border: 1px solid $primaryColor;
+  }
+
+  &:invalid {
+    border: 1px solid $inputInvalidBorder;
+  }
+}
+
+@mixin makeHeadingElement($color) {
+  bottom: -10px;
+  display: block;
+  height: 8px;
+  width: 100%;
+  border-bottom: 1px solid $color;
+  border-right: 1px solid $color;
+  border-left: 1px solid $color;
+  position: absolute;
+
+  &::before {
+    content: "";
+    top: 0;
+    left: -3px;
+    position: absolute;
+    width: 3px;
+    border-bottom: 1px solid $color;
+  }
+
+  &::after {
+    content: "";
+    top: 0;
+    right: -3px;
+    position: absolute;
+    width: 3px;
+    border-bottom: 1px solid $color;
+  }
+}
+
+@mixin makeFolderElementLeft($bg) {
+  background: $bg;
+  border-radius: 0 5px 5px 5px;
+  position: relative;
+
+  &::before {
+    top: -34px;
+    left: 0;
+    content: "";
+    background: $bg;
+    border-radius: 5px 5px 0 0;
+    display: block;
+    position: absolute;
+    height: 35px;
+    width: 90%;
+  }
+}
+
+@mixin makeFolderElementRight($bg) {
+  background: $bg;
+  border-radius: 5px 0 5px 5px;
+  margin-bottom: 55px;
+  position: relative;
+
+  &::before {
+    top: -34px;
+    right: 0;
+    content: "";
+    background: $bg;
+    border-radius: 5px 5px 0 0;
+    display: block;
+    position: absolute;
+    height: 35px;
+    width: 90%;
+  }
+}
+
+@mixin makeSliderBtn($btnColor) {
+  display: inline-block;
+  padding: 10px 10px 0 10px;
+  border: 1px solid $primaryColor;
+  border-radius: 5px;
+  cursor: pointer;
+  background: $secondaryColor;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 $btnColor;
+  }
+
+  &-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  &-img {
+    width: 25px;
+    height: 25px;
+  }
+
+  &--prev {
+    transform: rotateZ(90deg);
+  }
+
+  &--next {
+    transform: rotateZ(-90deg);
+  }
+}
+
+@mixin makeUpBtn() {
+  border: 1px solid $primaryColor;
+  background: $secondaryColor;
+  bottom: 20px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+
+  &::before {
+    content: "";
+    top: 18px;
+    left: 8px;
+    width: 14px;
+    border-bottom: 1px solid $primaryColor;
+    transform: rotateZ(-45deg);
+    position: absolute;
+  }
+
+  &::after {
+    content: "";
+    top: 18px;
+    right: 8px;
+    width: 14px;
+    border-bottom: 1px solid $primaryColor;
+    transform: rotateZ(45deg);
+    position: absolute;
+  }
+}
