@@ -1,0 +1,33 @@
+@import "colorMatrix";
+
+$primaryFont: "Hind Siliguri", Helvetica, Arial, sans-serif;
+$primaryFontSize: 15px;
+$primaryColor: $tundora;
+
+$secondaryFont: "Lucida Grande", Helvetica, Arial, sans-serif;
+$secondaryFontSize: 17px;
+$secondaryColor: $white;
+
+$logoColor: $fuscousGray;
+
+$primaryBtnBg: $fuscousGray;
+$primaryBtnHoverBg: $mineShaft;
+
+$inputBorder: $alto;
+$inputInvalidBorder: $froly;
+
+$typographyFolderElementBg: linear-gradient(to right, #d6d385 0%, #b4d495 100%);
+$iconsetFolderElementBg: linear-gradient(to left, #95b4fd 0%, #c5d9fb 100%);
+$accurateFolderElementBg: linear-gradient(to right, #ff8181 0%, #ffa3a3 100%);
+
+$postColor: $gray;
+$btnColor: $doveGray;
+
+$testimonialsBg: $abbey;
+$mainBg: $fantasy;
+$additionalBg: $alabaster;
+$additionalBorderColor: $superAlto;
+$formShadowColor: $nobel;
+
+$postQuoteBorderColor: $mercury;
+$asideHeadingBorderColor: $mercury;

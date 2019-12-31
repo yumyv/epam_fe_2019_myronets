@@ -1,3 +1,8 @@
 dist/
 src/**/styles/
 .idea/
+HW20-OOP2/task1/api.js
+HW20-OOP2/task1/libs/config.js
+HW20-OOP2/task1/libs/log.js
+HW20-OOP2/task1/libs/mongoose.js
+HW20-OOP2/task1/server.js
