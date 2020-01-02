@@ -1,3 +1,8 @@
 dist/
 src/**/styles/
 .idea/
+HW21-BOM/task1/api.js
+HW21-BOM/task1/libs/config.js
+HW21-BOM/task1/libs/log.js
+HW21-BOM/task1/libs/mongoose.js
+HW21-BOM/task1/server.js
