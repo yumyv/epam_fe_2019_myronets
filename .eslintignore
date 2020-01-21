@@ -1,3 +1,6 @@
 dist/
 src/**/styles/
 .idea/
+src/api.js
+src/libs/
+src/server.js
