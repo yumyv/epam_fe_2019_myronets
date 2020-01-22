@@ -1,4 +1,10 @@
 class BlogPage extends PageBuilder {
+  constructor(selector, page) {
+    super(selector, page);
+    this.id = new URLSearchParams(location.search).get('id');
+    this.getAllPostUrl = 'http://localhost:3000/api/list';
+  }
+
   heading(headingText) {
     const container = createDOMElement('div', 'blog__heading', 'main-heading');
     const heading = createDOMElement('h2', 'main-heading__text');
@@ -75,7 +81,7 @@ class BlogPage extends PageBuilder {
   }
 
   init() {
-    fetch('./api/list', {
+    fetch(this.getAllPostUrl, {
       method: 'get',
       headers: {
         'Content-Type': 'application/json',

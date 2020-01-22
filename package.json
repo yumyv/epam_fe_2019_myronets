@@ -4,6 +4,10 @@
   "version": "1.0.0",
   "description": "This repo exists for RD students needs",
   "main": "index.js",
+  "dependencies": {
+    "bootstrap-sass": "^3.4.1",
+    "jquery": "^3.4.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint-staged": "lint-staged"

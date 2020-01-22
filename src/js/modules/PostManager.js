@@ -5,7 +5,7 @@ class PostManager extends Module {
 
   clickEvent(event) {
     if (event.target.closest('.post__btn--more')) {
-      const url = new URL(`${window.location.origin}/post.html`);
+      const url = new URL(`${document.URL.substr(0, document.URL.lastIndexOf('/'))}/post.html`);
       const params = new URLSearchParams(location.search);
       params.set('id', event.target.closest('.post').getAttribute('data-id'));
       url.search = params.toString();

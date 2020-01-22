@@ -2,6 +2,7 @@ class PostPage extends PageBuilder {
   constructor(selector, page) {
     super(selector, page);
     this.id = new URLSearchParams(location.search).get('id');
+    this.getPostUrl = 'http://localhost:3000/api/list/';
   }
 
   appendLatestPosts(container) {
@@ -163,7 +164,7 @@ class PostPage extends PageBuilder {
   }
 
   init() {
-    fetch(`./api/list/${this.id}`, {
+    fetch(`${this.getPostUrl}${this.id}`, {
       method: 'get',
       headers: {
         'Content-Type': 'application/json',

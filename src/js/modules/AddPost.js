@@ -1,4 +1,9 @@
 class AddPost extends Module {
+  constructor(selector) {
+    super(selector);
+    this.addPostUrl = 'http://localhost:3000/api/create-article';
+  }
+
   onComponentsLoading() {
     this.fade = document.querySelector('.add-post-fade');
     this.addBtn = document.querySelector('.add-post-form__add');
@@ -15,7 +20,7 @@ class AddPost extends Module {
   }
 
   successRedirect(id) {
-    const url = new URL(`${window.location.origin}/post.html`);
+    const url = new URL(`${document.URL.substr(0, document.URL.lastIndexOf('/'))}/post.html`);
     const params = new URLSearchParams(location.search);
     params.set('id', id);
     url.search = params.toString();
@@ -51,7 +56,7 @@ class AddPost extends Module {
         {name: 'instagram', link: '#'},
       ];
 
-      fetch('./api/create-article', {
+      fetch(this.addPostUrl, {
         method: 'post',
         headers: {
           'Content-Type': 'application/json',
