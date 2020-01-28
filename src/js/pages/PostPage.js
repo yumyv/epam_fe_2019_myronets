@@ -8,7 +8,7 @@ class PostPage extends PageBuilder {
   constructor(selector, page) {
     super(selector, page);
     this.id = new URLSearchParams(location.search).get('id');
-    this.getPostUrl = 'http://localhost:3000/api/list/';
+    this.getPostUrl = 'http://localhost:3000/api/articles/';
   }
 
   appendLatestPosts(container) {

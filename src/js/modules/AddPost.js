@@ -4,7 +4,7 @@ import {createDOMElement, isValidTitle} from '../functions/functions';
 class AddPost extends Module {
   constructor(selector) {
     super(selector);
-    this.addPostUrl = 'http://localhost:3000/api/create-article';
+    this.addPostUrl = 'http://localhost:3000/api/articles';
   }
 
   onComponentsLoading() {
