@@ -8,7 +8,7 @@ class BlogPage extends PageBuilder {
   constructor(selector, page) {
     super(selector, page);
     this.id = new URLSearchParams(location.search).get('id');
-    this.getAllPostUrl = 'http://localhost:3000/api/list';
+    this.getAllPostUrl = 'http://localhost:3000/api/articles';
   }
 
   heading(headingText) {

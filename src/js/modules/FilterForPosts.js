@@ -46,7 +46,7 @@ class FilterForPosts extends Module {
         this.container.children[i].style.display = 'none';
       }
     }
-    this.checkResultMessage();
+    this.noResultMessage();
   }
 
   filterFromInput() {
@@ -66,26 +66,32 @@ class FilterForPosts extends Module {
   }
 
   filterFromStorage() {
-    const filteredWord = localStorage.getItem('filterWord');
-    if (filteredWord) {
-      const regPhraseAuthor = new RegExp(filteredWord, 'i');
-      const regPhraseTitle = new RegExp(filteredWord, 'i');
+    if (localStorage.getItem('filterWord')) {
+      const regPhraseAuthor = new RegExp(
+        localStorage.getItem('filterWord'), 'i');
+      const regPhraseTitle = new RegExp(
+        localStorage.getItem('filterWord'), 'i');
       this.filter(regPhraseAuthor, regPhraseTitle);
-      this.input.value = filteredWord;
+      this.input.value = localStorage.getItem('filterWord');
     }
   }
 
   resetFilter() {
-    const posts = this.container.children;
-    for (let i = 0; i < posts.length; i++) {
-      posts[i].style.display = '';
+    for (let i = 0; i < this.container.children.length; i++) {
+      this.container.children[i].style.display = '';
     }
     localStorage.removeItem('filterWord');
     this.messageOutput.innerText = '';
   }
 
-  checkResultMessage() {
-    const switcher = [].every.call(this.container.children, (post) => post.style.display = 'none');
+  noResultMessage() {
+    let switcher = true;
+    for (let i = 0; i < this.container.children.length; i++) {
+      const displayStatus = this.container.children[i].style.display;
+      if (displayStatus !== 'none') {
+        switcher = false;
+      }
+    }
     if (switcher) {
       this.messageOutput.innerText = 'No search results found';
     } else {

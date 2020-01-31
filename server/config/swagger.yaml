@@ -16,7 +16,7 @@ tags:
   - name: Articles
     description: Some list
 paths:
-  /api/list:
+  /api/articles:
     get:
       tags:
         - Articles
@@ -34,7 +34,47 @@ paths:
                   $ref: '#/components/schemas/Article'
         '400':
           description: bad input parameter
-  /api/list/{id}:
+    post:
+      tags:
+        - Articles
+      summary: add new article
+      operationId: addArticle
+      description: Add new article
+      responses:
+        '201':
+          description: item created
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Article'
+        '400':
+          description: 'invalid input, object invalid'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Article'
+        description: Article to add
+    delete:
+      tags:
+        - Articles
+      summary: delete all articles
+      operationId: deleteArticles
+      description: Delete all articles
+      responses:
+        '200':
+          description: items deleted
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Article'
+        '400':
+          description: bad input parameter
+  /api/articles/{id}:
     get:
       tags:
         - Articles
@@ -55,29 +95,55 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
                   $ref: '#/components/schemas/Article'
         '400':
           description: bad input parameter
-  /api/create-article:
-    post:
+    put:
       tags:
         - Articles
-      summary: add new article
-      operationId: addArticle
-      description: Add new article
+      summary: changes article by id
+      operationId: changeArticleByID
+      parameters:
+        - name: id
+          in: path
+          description: ID of article to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      description: change article by ID
       responses:
-        '201':
-          description: item created
+        '200':
+          description: change article matching criteria
+          content:
+            application/json:
+              schema:
+                  $ref: '#/components/schemas/Article'
         '400':
-          description: 'invalid input, object invalid'
+          description: bad input parameter
       requestBody:
         content:
           application/json:
             schema:
               $ref: '#/components/schemas/Article'
-        description: Article to add
+        description: Article changed
+    delete:
+      tags:
+        - Articles
+      summary: deletes article by id
+      operationId: deleteArticleByID
+      description: delete article by ID
+      responses:
+        '200':
+          description: deleted article matching criteria
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Article'
+        '400':
+          description: bad input parameter
 components:
   schemas:
     Article:
@@ -90,6 +156,49 @@ components:
           type: string
           format: uuid
           example: d290f1ee-6c54-4b01-90e6-d701748f0851
-        name:
+        type:
           type: string
-          example: Widget Adapter
+          example: image
+        imgUrl:
+          type: string
+          example: https://cdn-media-1.freecodecamp.org/images/0*ngXgBNNdx6iiWP8q.png
+        heading:
+          type: string
+          example: Fog up the river, where it flows among green aits and meadows
+        author:
+          type: string
+          example: Sarah Healy
+        date:
+          type: Object
+          example: 02 oct, 2019
+        text:
+          type: string
+          example: The thing you’re doing now, reading prose on a screen, is going out of fashion. The defining narrative of our online moment concerns the decline of text, and the exploding reach and power of audio and video. Which come particular teens wasn't. Own day designed suspension conflict unlawful.
+        quote:
+          type: string
+          example: Voice command is really very fast. A person does not need to learn how to navigate the graphical interface and how to use it for an intended purpose.
+        time:
+          type: string
+          example: 12 min read
+        imgAvatarUrl:
+          type: string
+          example: ./img/Sarah.png
+        mediaUrl:
+          type: string
+          example: ./media/Bach_VioPartita-2_Perlman_2.mp3
+        countOfComments:
+          type: number
+          example: 3
+        countOfStars:
+          type: number
+          example: 4.5
+        countOfLikes:
+          type: number
+          example: 13
+        socialLinks:
+          type: array
+          example: [
+          {name: 'facebook', link: 'https://www.facebook.com/user'},
+          {name: 'dribbble', link: 'https://dribbble.com/user'},
+          {name: 'instagram', link: 'https://www.instagram.com/user'}
+          ]
