@@ -3310,6 +3310,14 @@ body {
 .modal__text {
   margin: 10px 0;
 }
+.modal__textarea {
+  width: 100%;
+  min-height: 200px;
+}
+.modal__input {
+  margin-bottom: 10px;
+  width: 100%;
+}
 .modal__btn {
   margin-right: 20px;
 }

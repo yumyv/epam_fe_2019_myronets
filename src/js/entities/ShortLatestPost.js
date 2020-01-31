@@ -1,7 +1,7 @@
 import LatestPost from './LatestPost';
 import {createDOMElement} from '../functions/functions';
 
-class ShortLatestPost extends LatestPost {
+export default class ShortLatestPost extends LatestPost {
   image() {
     const image = createDOMElement('img', 'latest-post__img', 'latest-post__img--md');
     image.setAttribute('src', this.post.imgUrl);
@@ -30,5 +30,3 @@ class ShortLatestPost extends LatestPost {
     return post;
   }
 }
-
-export default ShortLatestPost;

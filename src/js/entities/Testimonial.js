@@ -1,6 +1,6 @@
 import {createDOMElement} from '../functions/functions';
 
-class Testimonial {
+export default class Testimonial {
   constructor(testimonial) {
     this.testimonial = testimonial;
   }
@@ -37,5 +37,3 @@ class Testimonial {
     return testimonial;
   }
 }
-
-export default Testimonial;

@@ -1,7 +1,5 @@
-class Module {
+export default class Module {
   constructor(selector) {
     this.selector = document.querySelector(selector);
   }
 }
-
-export default Module;

@@ -1,6 +1,6 @@
 import Module from './Module';
 
-class GoogleMap extends Module {
+export default class GoogleMap extends Module {
   init() {
     const myLatLng = new google.maps.LatLng(48.464718, 35.046185);
     const myOptions = {
@@ -11,5 +11,3 @@ class GoogleMap extends Module {
     const map = new google.maps.Map(this.selector, myOptions);
   }
 }
-
-export default GoogleMap;

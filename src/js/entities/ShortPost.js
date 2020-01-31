@@ -1,7 +1,7 @@
 import Post from './Post';
 import {createDOMElement, makeSvgPic} from '../functions/functions';
 
-class ShortPost extends Post {
+export default class ShortPost extends Post {
   constructor(post, id) {
     super(post, id);
     this.id = id;
@@ -46,18 +46,21 @@ class ShortPost extends Post {
     container.append(text);
   }
 
+  makeBtn(additionalClass, text) {
+    const btn = createDOMElement('button', 'post__btn', `post__btn--${additionalClass}`, 'secondary-btn');
+    btn.innerText = text;
+    return btn;
+  }
+
   content() {
     const content = createDOMElement('div', 'post__content');
     const textContainer = createDOMElement('div', 'post__text-container');
     this.appendTextContainer(textContainer);
-    const moreBtn = createDOMElement('button', 'post__btn', 'post__btn--more', 'secondary-btn');
-    moreBtn.innerText = 'Read more';
-    const deleteBtn = createDOMElement('button', 'post__btn', 'post__btn--delete', 'secondary-btn');
-    deleteBtn.innerText = 'Delete post';
     content.append(this.postInfo());
     content.append(textContainer);
-    content.append(moreBtn);
-    content.append(deleteBtn);
+    content.append(this.makeBtn('more', 'Read more'));
+    content.append(this.makeBtn('delete', 'Delete post'));
+    content.append(this.makeBtn('edit', 'Edit post'));
     return content;
   }
 
@@ -91,5 +94,3 @@ class ShortPost extends Post {
     return post;
   }
 }
-
-export default ShortPost;

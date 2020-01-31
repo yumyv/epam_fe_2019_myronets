@@ -1,6 +1,6 @@
 import {createDOMElement, makeSvgPic} from '../functions/functions';
 
-class Post {
+export default class Post {
   constructor(post) {
     this.post = post;
   }
@@ -78,5 +78,3 @@ class Post {
     return container;
   }
 }
-
-export default Post;

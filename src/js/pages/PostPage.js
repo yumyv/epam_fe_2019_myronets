@@ -4,11 +4,11 @@ import ShortLatestPost from '../entities/ShortLatestPost';
 import FullPost from '../entities/FullPost';
 import Comment from '../entities/Comment';
 
-class PostPage extends PageBuilder {
+export default class PostPage extends PageBuilder {
   constructor(selector, page) {
     super(selector, page);
     this.id = new URLSearchParams(location.search).get('id');
-    this.getPostUrl = 'http://localhost:3000/api/articles/';
+    this.postApiUrl = 'http://localhost:3000/api/articles/';
   }
 
   appendLatestPosts(container) {
@@ -170,7 +170,7 @@ class PostPage extends PageBuilder {
   }
 
   init() {
-    fetch(`${this.getPostUrl}${this.id}`, {
+    fetch(`${this.postApiUrl}${this.id}`, {
       method: 'get',
       headers: {
         'Content-Type': 'application/json',
@@ -192,5 +192,3 @@ class PostPage extends PageBuilder {
       });
   }
 }
-
-export default PostPage;
