@@ -4,11 +4,11 @@ import ShortPost from '../entities/ShortPost';
 import PostManager from '../modules/PostManager';
 import FilterForPosts from '../modules/FilterForPosts';
 
-class BlogPage extends PageBuilder {
+export default class BlogPage extends PageBuilder {
   constructor(selector, page) {
     super(selector, page);
     this.id = new URLSearchParams(location.search).get('id');
-    this.getAllPostUrl = 'http://localhost:3000/api/articles';
+    this.postApiUrl = 'http://localhost:3000/api/articles';
   }
 
   heading(headingText) {
@@ -62,11 +62,16 @@ class BlogPage extends PageBuilder {
   }
 
   listOfPosts(posts) {
-    const list = createDOMElement('div', 'posts-wrapper');
-    posts.reverse().forEach((post) => {
-      list.append(new ShortPost(post, post.id).asElement());
-    });
-    return list;
+    if (posts.length > 0) {
+      const list = createDOMElement('div', 'posts-wrapper');
+      posts.reverse().forEach((post) => {
+        list.append(new ShortPost(post, post.id).asElement());
+      });
+      return list;
+    } else {
+      return createDOMElement('div', 'posts-wrapper')
+        .innerText = 'There are no posts here, you can add new by clicking the button above.';
+    }
   }
 
   content() {
@@ -87,7 +92,7 @@ class BlogPage extends PageBuilder {
   }
 
   init() {
-    fetch(this.getAllPostUrl, {
+    fetch(this.postApiUrl, {
       method: 'get',
       headers: {
         'Content-Type': 'application/json',
@@ -113,5 +118,3 @@ class BlogPage extends PageBuilder {
       });
   }
 }
-
-export default BlogPage;

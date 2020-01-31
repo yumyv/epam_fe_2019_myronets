@@ -46,9 +46,7 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Article'
+                $ref: '#/components/schemas/Article'
         '400':
           description: 'invalid input, object invalid'
       requestBody:
@@ -66,12 +64,6 @@ paths:
       responses:
         '200':
           description: items deleted
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Article'
         '400':
           description: bad input parameter
   /api/articles/{id}:
@@ -136,12 +128,6 @@ paths:
       responses:
         '200':
           description: deleted article matching criteria
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Article'
         '400':
           description: bad input parameter
 components:

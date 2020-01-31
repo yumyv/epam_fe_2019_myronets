@@ -1,6 +1,6 @@
 import {createDOMElement} from '../functions/functions';
 
-class Portfolio {
+export default class Portfolio {
   constructor(portfolio) {
     this.portfolio = portfolio;
   }
@@ -32,5 +32,3 @@ class Portfolio {
     return portfolio;
   }
 }
-
-export default Portfolio;

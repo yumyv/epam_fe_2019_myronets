@@ -1,6 +1,6 @@
 import {createDOMElement, makeSvgPic} from '../functions/functions';
 
-class Comment {
+export default class Comment {
   constructor(comment, isFirst, isLast) {
     this.comment = comment;
     this.isFirst = isFirst;
@@ -74,5 +74,3 @@ class Comment {
     return comment;
   }
 }
-
-export default Comment;

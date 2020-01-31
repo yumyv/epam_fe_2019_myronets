@@ -1,6 +1,6 @@
 import Module from './Module';
 
-class FilterForPosts extends Module {
+export default class FilterForPosts extends Module {
   onCreate() {
     this.filterFromStorage();
   }
@@ -105,5 +105,3 @@ class FilterForPosts extends Module {
     this.onCreate();
   }
 }
-
-export default FilterForPosts;

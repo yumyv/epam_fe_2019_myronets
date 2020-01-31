@@ -1,7 +1,7 @@
 import Post from './Post';
 import {createDOMElement, makeSvgPic} from '../functions/functions';
 
-class LatestPost extends Post {
+export default class LatestPost extends Post {
   postInfo() {
     const info = document.createDocumentFragment();
     const date = createDOMElement('span', 'latest-post__date', 'latest-post__element');
@@ -17,5 +17,3 @@ class LatestPost extends Post {
     return info;
   }
 }
-
-export default LatestPost;

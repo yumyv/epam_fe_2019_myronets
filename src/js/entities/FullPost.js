@@ -1,7 +1,7 @@
 import Post from './Post';
 import {createDOMElement, makeSvgPic} from '../functions/functions';
 
-class FullPost extends Post {
+export default class FullPost extends Post {
   makePostAudio() {
     const audio = createDOMElement('audio', 'post__audio');
     audio.setAttribute('controls', 'controls');
@@ -78,5 +78,3 @@ class FullPost extends Post {
     return post;
   }
 }
-
-export default FullPost;

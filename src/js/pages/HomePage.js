@@ -4,7 +4,7 @@ import FullLatestPost from '../entities/FullLatestPost';
 import Portfolio from '../entities/Portfolio';
 import Testimonial from '../entities/Testimonial';
 
-class HomePage extends PageBuilder {
+export default class HomePage extends PageBuilder {
   headingText(text) {
     const textRow = createDOMElement('div', 'row');
     const textContainer = createDOMElement('div', 'main-text__container');
@@ -190,11 +190,7 @@ class HomePage extends PageBuilder {
       $(this.selector).modalWindow({
         type: 'info',
         text: 'Subscribe to this blog and be the first to know about updates.',
-        isAdditionalBtn: false,
-        onSuccess: () => {},
       });
     }, 10000);
   }
 }
-
-export default HomePage;

@@ -1446,6 +1446,16 @@ body {
     margin: 10px 0;
   }
 
+  &__textarea {
+    width: 100%;
+    min-height: 200px;
+  }
+
+  &__input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
   &__btn {
     margin-right: 20px;
   }

@@ -1,10 +1,10 @@
 import Module from './Module';
 import {createDOMElement, isValidTitle} from '../functions/functions';
 
-class AddPost extends Module {
+export default class AddPost extends Module {
   constructor(selector) {
     super(selector);
-    this.addPostUrl = 'http://localhost:3000/api/articles';
+    this.postApiUrl = 'http://localhost:3000/api/articles';
   }
 
   onComponentsLoading() {
@@ -35,7 +35,6 @@ class AddPost extends Module {
     e.preventDefault();
     if (isValidTitle(this.fade.querySelector('#postTitle').value)) {
       const post = {};
-      post.id = Date.now();
       post.type = this.fade.querySelector('#postType').value;
       post.imgUrl = this.fade.querySelector('#postImg').value;
       post.heading = this.fade.querySelector('#postTitle').value;
@@ -47,19 +46,7 @@ class AddPost extends Module {
       post.text = this.fade.querySelector('#postText').value;
       post.quote = this.fade.querySelector('#postQuote').value;
 
-      post.time = '12 min read';
-      post.imgAvatarUrl = './img/Sarah.png';
-      post.mediaUrl = '';
-      post.countOfComments = 0;
-      post.countOfStars = 0;
-      post.countOfLikes = 0;
-      post.socialLinks = [
-        {name: 'facebook', link: '#'},
-        {name: 'dribbble', link: '#'},
-        {name: 'instagram', link: '#'},
-      ];
-
-      fetch(this.addPostUrl, {
+      fetch(this.postApiUrl, {
         method: 'post',
         headers: {
           'Content-Type': 'application/json',
@@ -68,8 +55,13 @@ class AddPost extends Module {
       })
         .then((response) => {
           if (response.ok) {
-            this.successRedirect(post.id.toString());
+            return response.json();
+          } else {
+            return null;
           }
+        })
+        .then((response) => {
+          this.successRedirect(response.id);
         })
         .catch((err) => {
           this.fade.querySelector('.form__heading').insertAdjacentText('afterend', err);
@@ -89,5 +81,3 @@ class AddPost extends Module {
     this.onBindEvents();
   }
 }
-
-export default AddPost;

@@ -1,6 +1,5 @@
 dist/
 src/**/styles/
 .idea/
-server/api.js
-server/libs/
+server/libs/log.js
 server/server.js
