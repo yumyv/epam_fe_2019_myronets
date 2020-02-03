@@ -1,6 +1,7 @@
 import HomePage from './pages/HomePage';
 import PostPage from './pages/PostPage';
 import BlogPage from './pages/BlogPage';
+import PostsPage from './pages/PostsPage';
 import {LatestPortfolioSlider} from './modules/LatestPortfolioSlider';
 import {TestimonialsSlider} from './modules/TestimonialsSlider';
 import AddPost from './modules/AddPost';
@@ -37,6 +38,10 @@ const makeContent = (content) => {
   if (document.querySelector('.blog-hook')) {
     const blogPage = new BlogPage('.blog-hook', content.pages[1]);
     blogPage.init();
+  }
+  if (document.querySelector('.posts-hook')) {
+    const postsPage = new PostsPage('.posts-hook');
+    postsPage.init();
   }
   runModules();
 };
