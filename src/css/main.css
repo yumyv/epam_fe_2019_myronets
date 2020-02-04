@@ -2950,6 +2950,30 @@ body {
   background: #4fc3f7;
 }
 
+.default-post {
+  margin: 20px;
+  text-align: center;
+  width: 100%;
+}
+.default-post__img {
+  width: 400px;
+}
+
+.author-posts {
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.author-posts--aside {
+  flex-flow: column;
+}
+.author-posts__item {
+  margin: 0 10px 10px 0;
+}
+.author-posts__btn--active {
+  background: #4fc3f7;
+}
+
 .category {
   margin-bottom: 20px;
   padding-bottom: 4px;
