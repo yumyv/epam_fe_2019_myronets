@@ -10,6 +10,7 @@ module.exports = {
     home: './src/js/home.js',
     blog: './src/js/blog.js',
     post: './src/js/post.js',
+    posts: './src/js/posts.js',
   },
   output: {
     filename: 'js/[name].js',
@@ -98,6 +99,14 @@ module.exports = {
       template: './src/post.html',
       filename: 'post.html',
       chunks: ['post'],
+      minify: {
+        collapseWhitespace: true,
+      },
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/posts.html',
+      filename: 'posts.html',
+      chunks: ['posts'],
       minify: {
         collapseWhitespace: true,
       },

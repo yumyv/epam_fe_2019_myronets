@@ -2795,6 +2795,11 @@ body {
 .post__info {
   margin-bottom: 20px;
 }
+.post__info-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
 .post__info-wrapper {
   padding: 25px 0 0 10px;
   display: inline-block;
@@ -2903,6 +2908,70 @@ body {
 .post__btn {
   margin: 10px 10px 10px 0;
   padding: 10px 26px;
+}
+
+.posts-post {
+  position: relative;
+  min-height: 1px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+@media (min-width: 992px) {
+  .posts-post {
+    float: left;
+    width: 75%;
+  }
+}
+
+.posts-aside {
+  position: relative;
+  min-height: 1px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+@media (min-width: 992px) {
+  .posts-aside {
+    float: left;
+    width: 25%;
+  }
+}
+
+.posts {
+  display: flex;
+  flex-flow: row wrap;
+}
+.posts--aside {
+  flex-flow: column;
+}
+.posts__item {
+  margin: 0 10px 10px 0;
+}
+.posts__btn--active {
+  background: #4fc3f7;
+}
+
+.default-post {
+  margin: 20px;
+  text-align: center;
+  width: 100%;
+}
+.default-post__img {
+  width: 400px;
+}
+
+.author-posts {
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.author-posts--aside {
+  flex-flow: column;
+}
+.author-posts__item {
+  margin: 0 10px 10px 0;
+}
+.author-posts__btn--active {
+  background: #4fc3f7;
 }
 
 .category {

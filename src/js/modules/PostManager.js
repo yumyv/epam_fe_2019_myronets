@@ -1,10 +1,13 @@
 import Module from './Module';
-import {createDOMElement, isValidTitle} from '../functions/functions';
+import {isValidTitle} from '../functions/functions';
 
 export default class PostManager extends Module {
+  constructor(selector) {
+    super(selector);
+    this.postApiUrl = 'http://localhost:3000/api/articles/';
+  }
   onBindEvents() {
     this.selector.addEventListener('click', (event) => this.clickEvent(event));
-    this.postApiUrl = 'http://localhost:3000/api/articles/';
   }
 
   deletePost(id) {

@@ -8,7 +8,7 @@ export default class BlogPage extends PageBuilder {
   constructor(selector, page) {
     super(selector, page);
     this.id = new URLSearchParams(location.search).get('id');
-    this.postApiUrl = 'http://localhost:3000/api/articles';
+    this.postApiUrl = 'http://localhost:3000/api/articles/';
   }
 
   heading(headingText) {
