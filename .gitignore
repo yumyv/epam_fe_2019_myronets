@@ -3,3 +3,6 @@ dist
 server/node_modules
 .idea
 package-lock.json
+
+HW28-Unit-tests/coverage
+HW28-Unit-tests/node_modules
